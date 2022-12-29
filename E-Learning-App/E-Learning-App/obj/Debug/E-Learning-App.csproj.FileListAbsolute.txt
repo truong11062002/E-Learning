@@ -1,0 +1,9 @@
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E-Learning-App.csproj.AssemblyReference.cache
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Properties.Resources.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E-Learning-App.csproj.GenerateResource.cache
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E-Learning-App.csproj.CoreCompileInputs.cache
+C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\E-Learning-App.exe.config
+C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\E-Learning-App.exe
+C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\E-Learning-App.pdb
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E-Learning-App.exe
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E-Learning-App.pdb
