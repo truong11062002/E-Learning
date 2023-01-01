@@ -10,7 +10,7 @@ namespace E_Learning_App.DAO
 {
     public class DataProvider
     {
-        private string StringConnection = "Data Source=DESKTOP-IUEIHA4;Initial Catalog=MusicPlayer;Integrated Security=True";
+        private string StringConnection = "Data Source=DESKTOP-IUEIHA4;Initial Catalog=ELearning;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query)
         {
