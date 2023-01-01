@@ -13,13 +13,14 @@ namespace E_Learning_App.Screens
 {
     public partial class Form_Home : Form
     {
-        private DataTable dt;
+        DataTable dt;
         private Form activeForm = null;
         public Form_Home()
         {
             InitializeComponent();
             Variables.ListFormPanel.ListFormsPanel.Add(panel_main);
             Loading();
+            ShowAllCourses("select * from COURSE");
         }
 
         private void ShowAllCourses(string query)
@@ -38,13 +39,12 @@ namespace E_Learning_App.Screens
 
             foreach (DataRow row in dtShowProduct.Rows)
             {
-
-                //CustomControls.item items = new CustomControls.item(
-                //    row["music_id"].ToString(),
-                //    row["music_name"].ToString(),
-                //    row["singer_name"].ToString()
-                //);
-                //flpShowProduct.Controls.Add(items);
+                CustomControls.UC_Course items = new CustomControls.UC_Course(
+                    row["course_id"].ToString(),
+                    row["course_name"].ToString(),
+                    row["course_taught_by"].ToString()
+                );
+                flpShowProduct.Controls.Add(items);
             }
         }
 
@@ -70,6 +70,7 @@ namespace E_Learning_App.Screens
             DataProvider provider = new DataProvider();
             dt = new DataTable();
             dt = provider.ExecuteQuery(query);
+
         }
 
         private void iconButton6_Click(object sender, EventArgs e)
@@ -200,6 +201,10 @@ namespace E_Learning_App.Screens
             }
         }
 
-
+        private void iconButton_home_Click(object sender, EventArgs e)
+        {
+            Loading();
+            ShowAllCourses("select * from COURSE");
+        }
     }
 }
