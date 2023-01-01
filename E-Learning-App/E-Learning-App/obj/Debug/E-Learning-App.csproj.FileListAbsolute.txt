@@ -11,3 +11,6 @@ C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.For
 C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\FontAwesome.Sharp.dll
 C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\FontAwesome.Sharp.Pro.dll
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E-Learning-App.csproj.CopyComplete
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Login.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomControls.UC_Title.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomControls.UC_Course.resources
