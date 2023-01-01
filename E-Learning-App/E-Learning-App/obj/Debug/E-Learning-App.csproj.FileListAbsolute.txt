@@ -14,3 +14,5 @@ C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E-Learning-App.csproj.Copy
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Login.resources
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomControls.UC_Title.resources
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomControls.UC_Course.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.image.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Detail_Course.resources
