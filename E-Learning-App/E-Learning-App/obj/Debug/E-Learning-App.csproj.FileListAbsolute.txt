@@ -16,3 +16,10 @@ C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomContr
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomControls.UC_Course.resources
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.image.resources
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Detail_Course.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Learn.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomControls.UC_VideoInCourse.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\Interop.WMPLib.dll
+C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\AxInterop.WMPLib.dll
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\Interop.WMPLib.dll
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\AxInterop.WMPLib.dll
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E-Learning-App.csproj.ResolveComReference.cache
