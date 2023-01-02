@@ -77,6 +77,12 @@
     <Compile Include="CustomControls\UC_Title.Designer.cs">
       <DependentUpon>UC_Title.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\UC_VideoInCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UC_VideoInCourse.Designer.cs">
+      <DependentUpon>UC_VideoInCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="image.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -97,6 +103,12 @@
     <Compile Include="Screens\Form_Home.Designer.cs">
       <DependentUpon>Form_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Form_Learn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form_Learn.Designer.cs">
+      <DependentUpon>Form_Learn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UC_Title.resx">
       <DependentUpon>UC_Title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UC_VideoInCourse.resx">
+      <DependentUpon>UC_VideoInCourse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="image.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Form_Home.resx">
       <DependentUpon>Form_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Form_Learn.resx">
+      <DependentUpon>Form_Learn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
@@ -152,6 +170,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\co02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

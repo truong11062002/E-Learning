@@ -206,5 +206,46 @@ namespace E_Learning_App.Screens
             Loading();
             ShowAllCourses("select * from COURSE");
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            Loading();
+            ShowAllCourses("select * from COURSE");
+        }
+
+        private void FilterCourse()
+        {
+            string query = "select * from COURSE ";
+            if (TextBox_CourseSearch.Text == "What do you want to learn?")
+                query += "where (dbo.LanguageComprehension(course_name) like N'%" + "" + "%' " +
+                         "or course_name like N'%" + "" + "%') " +
+                         "or (dbo.LanguageComprehension(course_skill) like N'%" + "" + "%' " +
+                         "or course_skill like N'%" + "" + "%')" +
+                         "or (dbo.LanguageComprehension(course_taught_by) like N'%" + "" + "%' " +
+                         "or course_taught_by like N'%" + "" + "%')";
+            else
+            {
+                query += "where (dbo.LanguageComprehension(course_name) like N'%" + TextBox_CourseSearch.Text + "%' " +
+                         "or course_name like N'%" + TextBox_CourseSearch.Text + "%') " +
+                         "or (dbo.LanguageComprehension(course_skill) like N'%" + TextBox_CourseSearch.Text + "%' " +
+                         "or course_skill like N'%" + TextBox_CourseSearch.Text + "%')" +
+                         "or (dbo.LanguageComprehension(course_taught_by) like N'%" + TextBox_CourseSearch.Text + "%' " +
+                         "or course_taught_by like N'%" + TextBox_CourseSearch.Text + "%')";
+            }
+
+            ShowAllCourses(query);
+        }
+
+        private void iconButton_search_Click(object sender, EventArgs e)
+        {
+            FilterCourse();
+        }
+
+        private void TextBox_CourseSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (ch == (char)13)
+                FilterCourse();
+        }
     }
 }
