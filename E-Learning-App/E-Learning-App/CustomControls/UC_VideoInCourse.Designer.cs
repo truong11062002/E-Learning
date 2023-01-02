@@ -112,6 +112,8 @@ namespace E_Learning_App.CustomControls
             this.Controls.Add(this.pictureBox1);
             this.Name = "UC_VideoInCourse";
             this.Size = new System.Drawing.Size(348, 91);
+            this.Load += new System.EventHandler(this.UC_VideoInCourse_Load);
+            this.Click += new System.EventHandler(this.UC_VideoInCourse_Click);
             this.MouseEnter += new System.EventHandler(this.UC_VideoInCourse_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.UC_VideoInCourse_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

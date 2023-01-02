@@ -203,6 +203,7 @@ namespace E_Learning_App.Screens
 
         private void iconButton_home_Click(object sender, EventArgs e)
         {
+            CloseForm();
             Loading();
             ShowAllCourses("select * from COURSE");
         }
@@ -246,6 +247,33 @@ namespace E_Learning_App.Screens
             char ch = e.KeyChar;
             if (ch == (char)13)
                 FilterCourse();
+        }
+
+        private void CloseForm()
+        {
+            if (Application.OpenForms.OfType<Screens.Form_Learn>().Count() == 1)
+                Application.OpenForms.OfType<Screens.Form_Learn>().First().Close();
+
+        }
+
+        private void iconButton_InProgress_Click(object sender, EventArgs e)
+        {
+            CloseForm();
+        }
+
+        private void iconButton_Completed_Click(object sender, EventArgs e)
+        {
+            CloseForm();
+        }
+
+        private void iconButton_Cer_Click(object sender, EventArgs e)
+        {
+            CloseForm();
+        }
+
+        private void iconButton_Prof_Click(object sender, EventArgs e)
+        {
+            CloseForm();
         }
     }
 }

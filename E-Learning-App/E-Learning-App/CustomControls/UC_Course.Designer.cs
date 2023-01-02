@@ -40,16 +40,19 @@ namespace E_Learning_App.CustomControls
             // 
             // pictureBox_course
             // 
-            this.pictureBox_course.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox_course.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_course.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_course.Location = new System.Drawing.Point(45, 3);
             this.pictureBox_course.Name = "pictureBox_course";
-            this.pictureBox_course.Size = new System.Drawing.Size(422, 144);
+            this.pictureBox_course.Size = new System.Drawing.Size(341, 135);
             this.pictureBox_course.TabIndex = 0;
             this.pictureBox_course.TabStop = false;
             this.pictureBox_course.Click += new System.EventHandler(this.pictureBox_course_Click);
+            this.pictureBox_course.MouseEnter += new System.EventHandler(this.UC_Course_MouseEnter);
+            this.pictureBox_course.MouseLeave += new System.EventHandler(this.UC_Course_MouseLeave);
             // 
             // label_taught_by
             // 
+            this.label_taught_by.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_taught_by.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_taught_by.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label_taught_by.Location = new System.Drawing.Point(40, 220);
@@ -57,9 +60,13 @@ namespace E_Learning_App.CustomControls
             this.label_taught_by.Size = new System.Drawing.Size(346, 59);
             this.label_taught_by.TabIndex = 1;
             this.label_taught_by.Text = "taught_by";
+            this.label_taught_by.Click += new System.EventHandler(this.pictureBox_course_Click);
+            this.label_taught_by.MouseEnter += new System.EventHandler(this.UC_Course_MouseEnter);
+            this.label_taught_by.MouseLeave += new System.EventHandler(this.UC_Course_MouseLeave);
             // 
             // label_name_course
             // 
+            this.label_name_course.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_name_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_name_course.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label_name_course.Location = new System.Drawing.Point(40, 160);
@@ -67,6 +74,9 @@ namespace E_Learning_App.CustomControls
             this.label_name_course.Size = new System.Drawing.Size(346, 60);
             this.label_name_course.TabIndex = 0;
             this.label_name_course.Text = "name_course";
+            this.label_name_course.Click += new System.EventHandler(this.pictureBox_course_Click);
+            this.label_name_course.MouseEnter += new System.EventHandler(this.UC_Course_MouseEnter);
+            this.label_name_course.MouseLeave += new System.EventHandler(this.UC_Course_MouseLeave);
             // 
             // gradientPanel1
             // 
@@ -74,12 +84,16 @@ namespace E_Learning_App.CustomControls
             this.gradientPanel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.gradientPanel1.BottomColor = System.Drawing.Color.Empty;
             this.gradientPanel1.Controls.Add(this.label1);
+            this.gradientPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 282);
             this.gradientPanel1.Name = "gradientPanel1";
             this.gradientPanel1.Size = new System.Drawing.Size(422, 53);
             this.gradientPanel1.TabIndex = 3;
             this.gradientPanel1.TopColor = System.Drawing.Color.DarkGray;
+            this.gradientPanel1.Click += new System.EventHandler(this.pictureBox_course_Click);
+            this.gradientPanel1.MouseEnter += new System.EventHandler(this.UC_Course_MouseEnter);
+            this.gradientPanel1.MouseLeave += new System.EventHandler(this.UC_Course_MouseLeave);
             // 
             // label1
             // 
@@ -91,6 +105,9 @@ namespace E_Learning_App.CustomControls
             this.label1.Size = new System.Drawing.Size(327, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "100% Online";
+            this.label1.Click += new System.EventHandler(this.pictureBox_course_Click);
+            this.label1.MouseEnter += new System.EventHandler(this.UC_Course_MouseEnter);
+            this.label1.MouseLeave += new System.EventHandler(this.UC_Course_MouseLeave);
             // 
             // UC_Course
             // 
@@ -100,8 +117,11 @@ namespace E_Learning_App.CustomControls
             this.Controls.Add(this.label_taught_by);
             this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.pictureBox_course);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "UC_Course";
             this.Size = new System.Drawing.Size(422, 335);
+            this.MouseEnter += new System.EventHandler(this.UC_Course_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.UC_Course_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_course)).EndInit();
             this.gradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

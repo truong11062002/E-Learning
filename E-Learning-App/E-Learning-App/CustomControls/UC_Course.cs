@@ -54,5 +54,20 @@ namespace E_Learning_App.CustomControls
             DataTable dtShowMovieDetail = provider.ExecuteQuery(query);
             openChildForm(new Screens.Form_Detail_Course(myImage, dtShowMovieDetail));
         }
+
+        private void UC_Course_MouseEnter(object sender, EventArgs e)
+        {
+            BackColor = Color.FloralWhite;
+            label_name_course.Font = new Font("Microsoft Sans Serif", 15, FontStyle.Bold);
+            pictureBox_course.Dock = DockStyle.Top;
+        }
+
+        private void UC_Course_MouseLeave(object sender, EventArgs e)
+        {
+            BackColor = Color.Gainsboro;
+            label_name_course.Font = new Font("Microsoft Sans Serif", 13, FontStyle.Bold);
+            pictureBox_course.Dock = DockStyle.None;
+
+        }
     }
 }

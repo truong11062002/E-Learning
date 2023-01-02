@@ -14,6 +14,8 @@ namespace E_Learning_App.Screens
     {
         private Form activeForm = null;
         DataTable dt_global;
+        string id_course = "";
+        string id_course_detail = "";
         public Form_Detail_Course()
         {
             
@@ -34,6 +36,8 @@ namespace E_Learning_App.Screens
             label_skill.Text = dr["course_skill"].ToString();
             label_about.Text = dr["course_about"].ToString();
 
+            id_course = dr["course_id"].ToString();
+            id_course_detail = dr["course_id"].ToString() + "_01";
         }
         private void openChildForm(Form childForm)
         {
@@ -52,7 +56,7 @@ namespace E_Learning_App.Screens
 
         private void iconButton_enroll_Click(object sender, EventArgs e)
         {
-            openChildForm(new Screens.Form_Learn(dt_global));
+            openChildForm(new Screens.Form_Learn(id_course, id_course_detail));
         }
     }
 }
