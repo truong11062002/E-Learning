@@ -14,13 +14,15 @@ namespace E_Learning_App.CustomControls
     public partial class UC_Course : UserControl
     {
         private Form activeForm = null;
+        int countNumOfView;
         public UC_Course()
         {
             InitializeComponent();
         }
 
-        public UC_Course(string id, string name, string taught): this()
+        public UC_Course(string id, string name, string taught, string freq): this()
         {
+            
             Bitmap bm1 = (Bitmap)image.ResourceManager.GetObject(id);
 
             pictureBox_course.BackgroundImage = bm1;
@@ -29,6 +31,7 @@ namespace E_Learning_App.CustomControls
             pictureBox_course.Name = id;
             label_name_course.Text = name;
             label_taught_by.Text = taught;
+            countNumOfView = Convert.ToInt32(freq);
         }
 
         private void openChildForm(Form childForm)
@@ -53,6 +56,14 @@ namespace E_Learning_App.CustomControls
             DataProvider provider = new DataProvider();
             DataTable dtShowMovieDetail = provider.ExecuteQuery(query);
             openChildForm(new Screens.Form_Detail_Course(myImage, dtShowMovieDetail));
+            // -------- COUNT VIEW ------------
+            CountView(pictureBox_course.Name, ++countNumOfView);
+        }
+        private void CountView(string id, int count)
+        {
+            DataProvider provider = new DataProvider();
+            string query = $"update COURSE set course_freq = {count} where course_id = '{id}'";
+            provider.ExecuteNonQuery(query);
         }
 
         private void UC_Course_MouseEnter(object sender, EventArgs e)

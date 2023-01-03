@@ -26,6 +26,7 @@ namespace E_Learning_App.Screens
         public Form_Detail_Course(Bitmap bm, DataTable dt): this()
         {
             InitializeComponent();
+            
             dt_global = dt;
             DataRow dr = dt.Rows[0];
 
@@ -37,9 +38,11 @@ namespace E_Learning_App.Screens
             label_taught_by.Text = dr["course_taught_by"].ToString();
             label_skill.Text = dr["course_skill"].ToString();
             label_about.Text = dr["course_about"].ToString();
+            label_luotxem.Text = dr["course_freq"].ToString();
 
             id_course = dr["course_id"].ToString();
             id_course_detail = dr["course_id"].ToString() + "_01";
+            LoadStars(id_course);
         }
         private void openChildForm(Form childForm)
         {

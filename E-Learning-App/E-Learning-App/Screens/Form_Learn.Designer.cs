@@ -44,6 +44,7 @@ namespace E_Learning_App.Screens
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label_name_video = new System.Windows.Forms.Label();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.panel_detail_course.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel_video.SuspendLayout();
@@ -114,6 +115,7 @@ namespace E_Learning_App.Screens
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.iconButton6);
             this.panel3.Controls.Add(this.iconButton5);
             this.panel3.Controls.Add(this.iconButton4);
             this.panel3.Controls.Add(this.iconButton3);
@@ -221,6 +223,21 @@ namespace E_Learning_App.Screens
             this.label_name_video.Text = "name video";
             this.label_name_video.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // iconButton6
+            // 
+            this.iconButton6.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.iconButton6.FlatAppearance.BorderSize = 0;
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton6.IconColor = System.Drawing.Color.Black;
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton6.Location = new System.Drawing.Point(800, 121);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Size = new System.Drawing.Size(151, 59);
+            this.iconButton6.TabIndex = 8;
+            this.iconButton6.Text = "DOWNLOAD";
+            this.iconButton6.UseVisualStyleBackColor = false;
+            // 
             // Form_Learn
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -257,5 +274,6 @@ namespace E_Learning_App.Screens
         private System.Windows.Forms.Label label_name_video;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_videoInCourse;
+        private FontAwesome.Sharp.IconButton iconButton6;
     }
 }

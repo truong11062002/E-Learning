@@ -1,7 +1,7 @@
 ﻿
 namespace E_Learning_App.Screens
 {
-    partial class Form_Notification
+    partial class Form_Completed
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,13 @@ namespace E_Learning_App.Screens
         {
             this.SuspendLayout();
             // 
-            // Form_Notification
+            // Form_Completed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 492);
-            this.Name = "Form_Notification";
-            this.Text = "Form_Notification";
+            this.ClientSize = new System.Drawing.Size(1682, 864);
+            this.Name = "Form_Completed";
+            this.Text = "Form_Completed";
             this.ResumeLayout(false);
 
         }

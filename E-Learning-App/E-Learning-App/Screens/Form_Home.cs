@@ -42,7 +42,8 @@ namespace E_Learning_App.Screens
                 CustomControls.UC_Course items = new CustomControls.UC_Course(
                     row["course_id"].ToString(),
                     row["course_name"].ToString(),
-                    row["course_taught_by"].ToString()
+                    row["course_taught_by"].ToString(),
+                    row["course_freq"].ToString()
                 );
                 flpShowProduct.Controls.Add(items);
             }
@@ -210,6 +211,7 @@ namespace E_Learning_App.Screens
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
+            CloseForm();
             Loading();
             ShowAllCourses("select * from COURSE");
         }
@@ -259,21 +261,30 @@ namespace E_Learning_App.Screens
         private void iconButton_InProgress_Click(object sender, EventArgs e)
         {
             CloseForm();
+            openChildForm(new Screens.Form_InProgress());
         }
 
         private void iconButton_Completed_Click(object sender, EventArgs e)
         {
             CloseForm();
+            openChildForm(new Screens.Form_Completed());
         }
 
         private void iconButton_Cer_Click(object sender, EventArgs e)
         {
             CloseForm();
+            openChildForm(new Screens.Form_Certificate());
         }
 
         private void iconButton_Prof_Click(object sender, EventArgs e)
         {
             CloseForm();
+            openChildForm(new Screens.Form_Profile());
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

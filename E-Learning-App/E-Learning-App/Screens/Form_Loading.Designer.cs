@@ -1,7 +1,7 @@
 ﻿
 namespace E_Learning_App.Screens
 {
-    partial class Form_Notification
+    partial class Form_Loading
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace E_Learning_App.Screens
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Form_Notification
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 492);
-            this.Name = "Form_Notification";
-            this.Text = "Form_Notification";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form_Loading";
         }
 
         #endregion

@@ -47,6 +47,7 @@ namespace E_Learning_App.Screens
             this.iconButton_search = new FontAwesome.Sharp.IconButton();
             this.TextBox_CourseSearch = new System.Windows.Forms.TextBox();
             this.panel_main = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -246,6 +247,7 @@ namespace E_Learning_App.Screens
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.circularButton_avt);
             this.panel1.Controls.Add(this.panel5);
@@ -254,6 +256,7 @@ namespace E_Learning_App.Screens
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1700, 121);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
             // 
             // iconButton1
@@ -265,7 +268,7 @@ namespace E_Learning_App.Screens
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(1449, 45);
+            this.iconButton1.Location = new System.Drawing.Point(1455, 43);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(239, 49);
             this.iconButton1.TabIndex = 15;
@@ -280,9 +283,9 @@ namespace E_Learning_App.Screens
             this.circularButton_avt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.circularButton_avt.FlatAppearance.BorderSize = 0;
             this.circularButton_avt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton_avt.Location = new System.Drawing.Point(1393, 45);
+            this.circularButton_avt.Location = new System.Drawing.Point(1379, 39);
             this.circularButton_avt.Name = "circularButton_avt";
-            this.circularButton_avt.Size = new System.Drawing.Size(50, 50);
+            this.circularButton_avt.Size = new System.Drawing.Size(60, 56);
             this.circularButton_avt.TabIndex = 14;
             this.circularButton_avt.UseVisualStyleBackColor = false;
             // 
@@ -334,6 +337,15 @@ namespace E_Learning_App.Screens
             this.panel_main.Size = new System.Drawing.Size(1700, 911);
             this.panel_main.TabIndex = 2;
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.ForeColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(1451, 39);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(2, 60);
+            this.panel2.TabIndex = 16;
+            // 
             // Form_Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -373,5 +385,6 @@ namespace E_Learning_App.Screens
         private FontAwesome.Sharp.IconButton iconButton_home;
         private FontAwesome.Sharp.IconButton iconButton1;
         private CustomControls.CircularButton circularButton_avt;
+        private System.Windows.Forms.Panel panel2;
     }
 }
