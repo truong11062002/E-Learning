@@ -199,5 +199,68 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co20.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co26.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

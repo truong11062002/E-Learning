@@ -50,11 +50,21 @@ namespace E_Learning_App.Screens
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_name_course = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.b1 = new FontAwesome.Sharp.IconButton();
+            this.b2 = new FontAwesome.Sharp.IconButton();
+            this.b3 = new FontAwesome.Sharp.IconButton();
+            this.b4 = new FontAwesome.Sharp.IconButton();
+            this.b5 = new FontAwesome.Sharp.IconButton();
+            this.label_danhgia = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_course)).BeginInit();
             this.panel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,6 +160,10 @@ namespace E_Learning_App.Screens
             this.gradientPanel1.Angle = 50F;
             this.gradientPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gradientPanel1.BottomColor = System.Drawing.Color.Empty;
+            this.gradientPanel1.Controls.Add(this.label11);
+            this.gradientPanel1.Controls.Add(this.label12);
+            this.gradientPanel1.Controls.Add(this.label_danhgia);
+            this.gradientPanel1.Controls.Add(this.flowLayoutPanel1);
             this.gradientPanel1.Controls.Add(this.iconButton_enroll);
             this.gradientPanel1.Controls.Add(this.label6);
             this.gradientPanel1.Controls.Add(this.label5);
@@ -255,7 +269,7 @@ namespace E_Learning_App.Screens
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -311,6 +325,138 @@ namespace E_Learning_App.Screens
             this.label_name_course.TabIndex = 0;
             this.label_name_course.Text = "Name_Course";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Controls.Add(this.b1);
+            this.flowLayoutPanel1.Controls.Add(this.b2);
+            this.flowLayoutPanel1.Controls.Add(this.b3);
+            this.flowLayoutPanel1.Controls.Add(this.b4);
+            this.flowLayoutPanel1.Controls.Add(this.b5);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(42, 381);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(291, 50);
+            this.flowLayoutPanel1.TabIndex = 11;
+            // 
+            // b1
+            // 
+            this.b1.BackColor = System.Drawing.Color.Transparent;
+            this.b1.FlatAppearance.BorderSize = 0;
+            this.b1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b1.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.b1.IconColor = System.Drawing.Color.Black;
+            this.b1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.b1.Location = new System.Drawing.Point(3, 3);
+            this.b1.Name = "b1";
+            this.b1.Size = new System.Drawing.Size(52, 46);
+            this.b1.TabIndex = 0;
+            this.b1.UseVisualStyleBackColor = false;
+            this.b1.Click += new System.EventHandler(this.b1_Click);
+            this.b1.MouseEnter += new System.EventHandler(this.b1_MouseEnter);
+            this.b1.MouseLeave += new System.EventHandler(this.b1_MouseLeave);
+            // 
+            // b2
+            // 
+            this.b2.BackColor = System.Drawing.Color.Transparent;
+            this.b2.FlatAppearance.BorderSize = 0;
+            this.b2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b2.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.b2.IconColor = System.Drawing.Color.Black;
+            this.b2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.b2.Location = new System.Drawing.Point(61, 3);
+            this.b2.Name = "b2";
+            this.b2.Size = new System.Drawing.Size(52, 46);
+            this.b2.TabIndex = 1;
+            this.b2.UseVisualStyleBackColor = false;
+            this.b2.Click += new System.EventHandler(this.b1_Click);
+            this.b2.MouseEnter += new System.EventHandler(this.b1_MouseEnter);
+            this.b2.MouseLeave += new System.EventHandler(this.b1_MouseLeave);
+            // 
+            // b3
+            // 
+            this.b3.BackColor = System.Drawing.Color.Transparent;
+            this.b3.FlatAppearance.BorderSize = 0;
+            this.b3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b3.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.b3.IconColor = System.Drawing.Color.Black;
+            this.b3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.b3.Location = new System.Drawing.Point(119, 3);
+            this.b3.Name = "b3";
+            this.b3.Size = new System.Drawing.Size(52, 46);
+            this.b3.TabIndex = 2;
+            this.b3.UseVisualStyleBackColor = false;
+            this.b3.Click += new System.EventHandler(this.b1_Click);
+            this.b3.MouseEnter += new System.EventHandler(this.b1_MouseEnter);
+            this.b3.MouseLeave += new System.EventHandler(this.b1_MouseLeave);
+            // 
+            // b4
+            // 
+            this.b4.BackColor = System.Drawing.Color.Transparent;
+            this.b4.FlatAppearance.BorderSize = 0;
+            this.b4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b4.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.b4.IconColor = System.Drawing.Color.Black;
+            this.b4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.b4.Location = new System.Drawing.Point(177, 3);
+            this.b4.Name = "b4";
+            this.b4.Size = new System.Drawing.Size(52, 46);
+            this.b4.TabIndex = 3;
+            this.b4.UseVisualStyleBackColor = false;
+            this.b4.Click += new System.EventHandler(this.b1_Click);
+            this.b4.MouseEnter += new System.EventHandler(this.b1_MouseEnter);
+            this.b4.MouseLeave += new System.EventHandler(this.b1_MouseLeave);
+            // 
+            // b5
+            // 
+            this.b5.BackColor = System.Drawing.Color.Transparent;
+            this.b5.FlatAppearance.BorderSize = 0;
+            this.b5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b5.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.b5.IconColor = System.Drawing.Color.Black;
+            this.b5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.b5.Location = new System.Drawing.Point(235, 3);
+            this.b5.Name = "b5";
+            this.b5.Size = new System.Drawing.Size(52, 46);
+            this.b5.TabIndex = 4;
+            this.b5.UseVisualStyleBackColor = false;
+            this.b5.Click += new System.EventHandler(this.b1_Click);
+            this.b5.MouseEnter += new System.EventHandler(this.b1_MouseEnter);
+            this.b5.MouseLeave += new System.EventHandler(this.b1_MouseLeave);
+            // 
+            // label_danhgia
+            // 
+            this.label_danhgia.AutoSize = true;
+            this.label_danhgia.BackColor = System.Drawing.Color.Transparent;
+            this.label_danhgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_danhgia.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label_danhgia.Location = new System.Drawing.Point(342, 406);
+            this.label_danhgia.Name = "label_danhgia";
+            this.label_danhgia.Size = new System.Drawing.Size(20, 24);
+            this.label_danhgia.TabIndex = 12;
+            this.label_danhgia.Text = "0";
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label12.Location = new System.Drawing.Point(376, 406);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(31, 24);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "5";
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label11.Location = new System.Drawing.Point(361, 406);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(14, 24);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "/";
+            // 
             // Form_Detail_Course
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -326,6 +472,7 @@ namespace E_Learning_App.Screens
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_course)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -353,5 +500,14 @@ namespace E_Learning_App.Screens
         private System.Windows.Forms.Label label_skill;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label_about;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private FontAwesome.Sharp.IconButton b1;
+        private FontAwesome.Sharp.IconButton b2;
+        private FontAwesome.Sharp.IconButton b3;
+        private FontAwesome.Sharp.IconButton b4;
+        private FontAwesome.Sharp.IconButton b5;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label_danhgia;
+        private System.Windows.Forms.Label label11;
     }
 }
