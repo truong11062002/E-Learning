@@ -37,14 +37,12 @@ namespace E_Learning_App.Screens
             this.panel_video = new System.Windows.Forms.Panel();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label_name_video = new System.Windows.Forms.Label();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.panel_detail_course.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel_video.SuspendLayout();
@@ -84,14 +82,14 @@ namespace E_Learning_App.Screens
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(52, 45);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 32);
+            this.label1.Size = new System.Drawing.Size(394, 98);
             this.label1.TabIndex = 0;
             this.label1.Text = "Course introduction";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel_video
             // 
@@ -112,13 +110,12 @@ namespace E_Learning_App.Screens
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(1258, 675);
             this.axWindowsMediaPlayer1.TabIndex = 1;
+            this.axWindowsMediaPlayer1.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.axWindowsMediaPlayer1_PlayStateChange);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.iconButton6);
             this.panel3.Controls.Add(this.iconButton5);
-            this.panel3.Controls.Add(this.iconButton4);
-            this.panel3.Controls.Add(this.iconButton3);
             this.panel3.Controls.Add(this.iconButton2);
             this.panel3.Controls.Add(this.iconButton1);
             this.panel3.Controls.Add(this.panel4);
@@ -128,79 +125,77 @@ namespace E_Learning_App.Screens
             this.panel3.Size = new System.Drawing.Size(1285, 183);
             this.panel3.TabIndex = 0;
             // 
+            // iconButton6
+            // 
+            this.iconButton6.BackColor = System.Drawing.Color.GhostWhite;
+            this.iconButton6.FlatAppearance.BorderSize = 0;
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton6.ForeColor = System.Drawing.Color.Blue;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton6.IconColor = System.Drawing.Color.Blue;
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton6.Location = new System.Drawing.Point(486, 121);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Size = new System.Drawing.Size(151, 59);
+            this.iconButton6.TabIndex = 8;
+            this.iconButton6.Text = "DOWNLOAD";
+            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton6.UseVisualStyleBackColor = false;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
+            // 
             // iconButton5
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.iconButton5.BackColor = System.Drawing.Color.GhostWhite;
             this.iconButton5.FlatAppearance.BorderSize = 0;
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
+            this.iconButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton5.ForeColor = System.Drawing.Color.Blue;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Flag;
+            this.iconButton5.IconColor = System.Drawing.Color.Blue;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(643, 121);
+            this.iconButton5.Location = new System.Drawing.Point(329, 121);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(151, 59);
             this.iconButton5.TabIndex = 7;
             this.iconButton5.Text = "REPORT AN ISSUE";
+            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = false;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(486, 121);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(151, 59);
-            this.iconButton4.TabIndex = 6;
-            this.iconButton4.Text = "DISLIKE";
-            this.iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(329, 121);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(151, 59);
-            this.iconButton3.TabIndex = 5;
-            this.iconButton3.Text = "LIKE";
-            this.iconButton3.UseVisualStyleBackColor = false;
             // 
             // iconButton2
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.iconButton2.BackColor = System.Drawing.Color.GhostWhite;
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.Blue;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Comment;
+            this.iconButton2.IconColor = System.Drawing.Color.Blue;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.Location = new System.Drawing.Point(172, 121);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(151, 59);
             this.iconButton2.TabIndex = 4;
             this.iconButton2.Text = "DISCUSS";
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
             // 
             // iconButton1
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.iconButton1.BackColor = System.Drawing.Color.GhostWhite;
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.Blue;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.iconButton1.IconColor = System.Drawing.Color.Blue;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.Location = new System.Drawing.Point(15, 121);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(151, 59);
             this.iconButton1.TabIndex = 3;
             this.iconButton1.Text = "NOTE";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // panel4
@@ -223,21 +218,6 @@ namespace E_Learning_App.Screens
             this.label_name_video.Text = "name video";
             this.label_name_video.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // iconButton6
-            // 
-            this.iconButton6.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton6.IconColor = System.Drawing.Color.Black;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.Location = new System.Drawing.Point(800, 121);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(151, 59);
-            this.iconButton6.TabIndex = 8;
-            this.iconButton6.Text = "DOWNLOAD";
-            this.iconButton6.UseVisualStyleBackColor = false;
-            // 
             // Form_Learn
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -249,7 +229,6 @@ namespace E_Learning_App.Screens
             this.Load += new System.EventHandler(this.Form_Learn_Load);
             this.panel_detail_course.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel_video.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -266,8 +245,6 @@ namespace E_Learning_App.Screens
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Panel panel4;

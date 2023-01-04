@@ -23,24 +23,37 @@ namespace E_Learning_App.Screens
 
         private void Load_MyProgess()
         {
-            string query = "SELECT * FROM COURSE INNER JOIN DETAIL_COURSE ON COURSE.course_id = DETAIL_COURSE.course_id WHERE DETAIL_COURSE.course_id = 'co01'";
+            string query = $"SELECT course_id, COUNT(course_id) as numOfCourseDetail " +
+                $"FROM DETAIL_COURSE GROUP BY course_id";
 
             DataProvider provider = new DataProvider();
             DataTable dtShowMyList = provider.ExecuteQuery(query);
+            
 
             ResourceManager rm;
             if (dtShowMyList.Rows.Count > 0)
             {
                 foreach (DataRow row in dtShowMyList.Rows)
                 {
-                    rm = image.ResourceManager;
-                    Bitmap myImage = (Bitmap)rm.GetObject(row["course_id"].ToString());
+                    query = $"SELECT course_id, COUNT(course_id) as numOfCourseDetail " +
+                        $"FROM DETAIL_COURSE " +
+                        $"WHERE course_detail_completed = 1 and course_id = '{row["course_id"]}' GROUP BY course_id HAVING COUNT(course_id) <> {row["numOfCourseDetail"]}";
 
-                    CustomControls.UC_InProgress item = new CustomControls.UC_InProgress(
-                        myImage,
-                        row
-                    );
-                    flowLayoutPanel_InProgress.Controls.Add(item);
+                    DataTable dt_completed = provider.ExecuteQuery(query);
+                    if (dt_completed.Rows.Count > 0)
+                    {
+                        rm = image.ResourceManager;
+                        Bitmap myImage = (Bitmap)rm.GetObject(row["course_id"].ToString());
+
+                        CustomControls.UC_InProgress item = new CustomControls.UC_InProgress(
+                            myImage,
+                            row["course_id"].ToString(),
+                            row["numOfCourseDetail"].ToString(),
+                            dt_completed.Rows[0]["numOfCourseDetail"].ToString()
+                        );
+                        flowLayoutPanel_InProgress.Controls.Add(item);
+                    }
+                    
                 }
             }
             else

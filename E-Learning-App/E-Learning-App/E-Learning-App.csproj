@@ -165,6 +165,9 @@
     </Compile>
     <Compile Include="Variables\globalVariablescs.cs" />
     <Compile Include="Variables\ListFormPanel.cs" />
+    <EmbeddedResource Include="CustomControls\UC_Completed.resx">
+      <DependentUpon>UC_Completed.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UC_Course.resx">
       <DependentUpon>UC_Course.cs</DependentUpon>
     </EmbeddedResource>

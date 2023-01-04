@@ -16,5 +16,13 @@ namespace E_Learning_App.CustomControls
         {
             InitializeComponent();
         }
+
+        public UC_Completed(Bitmap bm, DataRow dr) : this()
+        {
+            pictureBox_course.BackgroundImage = bm;
+            pictureBox_course.BackgroundImageLayout = ImageLayout.Stretch;
+
+            label_taught_by.Text = dr["course_taught_by"].ToString();
+        }
     }
 }

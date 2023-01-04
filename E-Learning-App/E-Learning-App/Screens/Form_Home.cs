@@ -21,6 +21,21 @@ namespace E_Learning_App.Screens
             Variables.ListFormPanel.ListFormsPanel.Add(panel_main);
             Loading();
             ShowAllCourses("select * from COURSE");
+            iconButton_name_leaner.Text = getNameLearner("select * from LEARNER");
+        }
+        private void Form_Home_Load(object sender, EventArgs e)
+        {
+            
+        }
+        private string getNameLearner(string query)
+        {
+            string name_learner = "";
+            DataProvider provider = new DataProvider();
+            dt = new DataTable();
+            dt = provider.ExecuteQuery(query);
+
+            name_learner = dt.Rows[0]["LEARNER_NAME"].ToString();
+            return name_learner;
         }
 
         private void ShowAllCourses(string query)
@@ -286,5 +301,7 @@ namespace E_Learning_App.Screens
         {
 
         }
+
+        
     }
 }

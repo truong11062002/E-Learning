@@ -29,6 +29,7 @@ namespace E_Learning_App.CustomControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_InProgress));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,8 +42,13 @@ namespace E_Learning_App.CustomControls
             this.label_thoiluong = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label_prog = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_course = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_course)).BeginInit();
             this.SuspendLayout();
@@ -101,13 +107,16 @@ namespace E_Learning_App.CustomControls
             // label_name_course
             // 
             this.label_name_course.AutoSize = true;
-            this.label_name_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_name_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_name_course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(194)))));
             this.label_name_course.Location = new System.Drawing.Point(215, 71);
             this.label_name_course.Name = "label_name_course";
-            this.label_name_course.Size = new System.Drawing.Size(201, 32);
+            this.label_name_course.Size = new System.Drawing.Size(194, 31);
             this.label_name_course.TabIndex = 6;
             this.label_name_course.Text = "Name_course";
+            this.label_name_course.Click += new System.EventHandler(this.label_name_course_Click);
+            this.label_name_course.MouseEnter += new System.EventHandler(this.label_name_course_MouseEnter);
+            this.label_name_course.MouseLeave += new System.EventHandler(this.label_name_course_MouseLeave);
             // 
             // label3
             // 
@@ -126,6 +135,7 @@ namespace E_Learning_App.CustomControls
             this.label_next_name_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_next_name_course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(194)))));
             this.label_next_name_course.Location = new System.Drawing.Point(1278, 74);
+            this.label_next_name_course.MaximumSize = new System.Drawing.Size(380, 0);
             this.label_next_name_course.Name = "label_next_name_course";
             this.label_next_name_course.Size = new System.Drawing.Size(232, 29);
             this.label_next_name_course.TabIndex = 8;
@@ -136,7 +146,7 @@ namespace E_Learning_App.CustomControls
             this.label_thoiluong.AutoSize = true;
             this.label_thoiluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_thoiluong.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label_thoiluong.Location = new System.Drawing.Point(1382, 119);
+            this.label_thoiluong.Location = new System.Drawing.Point(1382, 156);
             this.label_thoiluong.Name = "label_thoiluong";
             this.label_thoiluong.Size = new System.Drawing.Size(76, 20);
             this.label_thoiluong.TabIndex = 11;
@@ -146,7 +156,7 @@ namespace E_Learning_App.CustomControls
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.ForeColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(1358, 116);
+            this.panel3.Location = new System.Drawing.Point(1358, 153);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(2, 30);
             this.panel3.TabIndex = 9;
@@ -156,11 +166,42 @@ namespace E_Learning_App.CustomControls
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(1280, 119);
+            this.label5.Location = new System.Drawing.Point(1280, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Time";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(222, 128);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(596, 17);
+            this.progressBar1.TabIndex = 12;
+            // 
+            // label_prog
+            // 
+            this.label_prog.AutoSize = true;
+            this.label_prog.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_prog.Location = new System.Drawing.Point(835, 122);
+            this.label_prog.Name = "label_prog";
+            this.label_prog.Size = new System.Drawing.Size(37, 24);
+            this.label_prog.TabIndex = 13;
+            this.label_prog.Text = "0%";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(1235, 71);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 38);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -184,6 +225,9 @@ namespace E_Learning_App.CustomControls
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label_prog);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label_thoiluong);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label5);
@@ -200,6 +244,7 @@ namespace E_Learning_App.CustomControls
             this.Name = "UC_InProgress";
             this.Size = new System.Drawing.Size(1682, 200);
             this.Load += new System.EventHandler(this.UC_InProgress_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_course)).EndInit();
             this.ResumeLayout(false);
@@ -222,5 +267,9 @@ namespace E_Learning_App.CustomControls
         private System.Windows.Forms.Label label_thoiluong;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label_prog;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

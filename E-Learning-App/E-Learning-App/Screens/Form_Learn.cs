@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +17,9 @@ namespace E_Learning_App.Screens
     public partial class Form_Learn : Form
     {
         DataProvider provider = new DataProvider();
-        public string id;
+        public string id_course_global;
+        public string id_course_detail_global;
+
         public Form_Learn()
         {
             //InitializeComponent();
@@ -23,6 +27,8 @@ namespace E_Learning_App.Screens
 
         public Form_Learn(string id_course, string id_course_detail) : this()
         {
+            id_course_global = id_course;
+            id_course_detail_global = id_course_detail;
             InitializeComponent();
 
             string query = $"SELECT * FROM COURSE INNER JOIN DETAIL_COURSE ON COURSE.course_id = DETAIL_COURSE.course_id WHERE DETAIL_COURSE.course_id = '{id_course}' order by course_detail_id asc";
@@ -69,6 +75,46 @@ namespace E_Learning_App.Screens
         {
             //if (Application.OpenForms.OfType<Screens.Form_Learn>().Count() == 1)
             //    Application.OpenForms.OfType<Screens.Form_Learn>().First().Close();
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            //DataRow dr = dt_global.Rows[0];
+            OpenFileDialog folderBrowser = new OpenFileDialog();
+            folderBrowser.ValidateNames = false;
+            folderBrowser.CheckFileExists = false;
+            folderBrowser.CheckPathExists = true;
+            folderBrowser.FileName = "Folder Selection";
+
+            if (folderBrowser.ShowDialog() == DialogResult.OK)
+            {
+                string folderPath = Path.GetDirectoryName(folderBrowser.FileName);
+                using (var client = new WebClient())
+                {
+                    client.DownloadFile($"{id_course_global}/" + id_course_detail_global + ".mp4", folderPath + $"/{id_course_detail_global}.mp4");
+                }
+                MessageBox.Show("Tải phim thành công!");
+            }
+            else
+                MessageBox.Show("Tải phim thất bại!");
+        }
+
+        private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
+        {
+            if (e.newState == 1)
+            {
+                string query = $"update DETAIL_COURSE set course_detail_completed = 1 " +
+                    $"where DETAIL_COURSE.course_detail_id = '{id_course_detail_global}' " +
+                    $"and DETAIL_COURSE.course_id = '{id_course_global}'";
+
+                provider.ExecuteNonQuery(query);
+
+                query = $"SELECT * FROM COURSE INNER JOIN DETAIL_COURSE ON COURSE.course_id = DETAIL_COURSE.course_id " +
+                    $"WHERE DETAIL_COURSE.course_id = '{id_course_global}' order by course_detail_id asc";
+                DataTable dt = provider.ExecuteQuery(query);
+                Load_VideoInCourse(dt);
+                Load_AllVideo(id_course_global, id_course_detail_global);
+            }
         }
     }
 }
