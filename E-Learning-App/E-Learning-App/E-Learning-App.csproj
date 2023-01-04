@@ -109,6 +109,12 @@
     <Compile Include="Screens\Form_Certificate.Designer.cs">
       <DependentUpon>Form_Certificate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Form_Change_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form_Change_Info.Designer.cs">
+      <DependentUpon>Form_Change_Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Form_Completed.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </Compile>
     <EmbeddedResource Include="Screens\Form_Certificate.resx">
       <DependentUpon>Form_Certificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Form_Change_Info.resx">
+      <DependentUpon>Form_Change_Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Form_Completed.resx">
       <DependentUpon>Form_Completed.cs</DependentUpon>

@@ -315,6 +315,7 @@ namespace E_Learning_App.Screens
             // iconButton_enroll
             // 
             this.iconButton_enroll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.iconButton_enroll.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton_enroll.FlatAppearance.BorderSize = 0;
             this.iconButton_enroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton_enroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

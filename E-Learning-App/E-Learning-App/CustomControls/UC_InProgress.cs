@@ -17,6 +17,7 @@ namespace E_Learning_App.CustomControls
         string _sum = "";
         string _prog = "";
         private Form activeForm = null;
+        bool isClicked = false;
         public UC_InProgress()
         {
             InitializeComponent();
@@ -92,6 +93,45 @@ namespace E_Learning_App.CustomControls
         private void label_name_course_MouseLeave(object sender, EventArgs e)
         {
             label_name_course.Font = new Font("Microsoft Sans Serif", 16, FontStyle.Bold);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            isClicked = !isClicked;
+            if (isClicked)
+            {
+                this.panel4.Visible = true;
+                
+            }
+            else
+            {
+                this.panel4.Visible = false;
+            }
+            
+        }
+
+        private void iconButton1_MouseEnter(object sender, EventArgs e)
+        {
+            iconButton1.BackColor = Color.Blue;
+            iconButton1.ForeColor = Color.White;
+        }
+
+        private void iconButton1_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton1.BackColor = Color.White;
+            iconButton1.ForeColor = Color.Black;
+        }
+
+        private void iconButton2_MouseEnter(object sender, EventArgs e)
+        {
+            iconButton2.BackColor = Color.Blue;
+            iconButton2.ForeColor = Color.White;
+        }
+
+        private void iconButton2_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton2.BackColor = Color.White;
+            iconButton2.ForeColor = Color.Black;
         }
     }
 }

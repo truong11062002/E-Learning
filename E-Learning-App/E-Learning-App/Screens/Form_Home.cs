@@ -302,6 +302,10 @@ namespace E_Learning_App.Screens
 
         }
 
-        
+        private void iconButton_name_leaner_Click(object sender, EventArgs e)
+        {
+            Form ChangeInfo = new Screens.Form_Change_Info();
+            ChangeInfo.Show();
+        }
     }
 }
