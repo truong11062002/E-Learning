@@ -21,6 +21,21 @@ namespace E_Learning_App.Screens
             Variables.ListFormPanel.ListFormsPanel.Add(panel_main);
             Loading();
             ShowAllCourses("select * from COURSE");
+            iconButton_name_leaner.Text = getNameLearner("select * from LEARNER");
+        }
+        private void Form_Home_Load(object sender, EventArgs e)
+        {
+            
+        }
+        private string getNameLearner(string query)
+        {
+            string name_learner = "";
+            DataProvider provider = new DataProvider();
+            dt = new DataTable();
+            dt = provider.ExecuteQuery(query);
+
+            name_learner = dt.Rows[0]["LEARNER_NAME"].ToString();
+            return name_learner;
         }
 
         private void ShowAllCourses(string query)
@@ -42,7 +57,8 @@ namespace E_Learning_App.Screens
                 CustomControls.UC_Course items = new CustomControls.UC_Course(
                     row["course_id"].ToString(),
                     row["course_name"].ToString(),
-                    row["course_taught_by"].ToString()
+                    row["course_taught_by"].ToString(),
+                    row["course_freq"].ToString()
                 );
                 flpShowProduct.Controls.Add(items);
             }
@@ -210,6 +226,7 @@ namespace E_Learning_App.Screens
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
+            CloseForm();
             Loading();
             ShowAllCourses("select * from COURSE");
         }
@@ -259,21 +276,32 @@ namespace E_Learning_App.Screens
         private void iconButton_InProgress_Click(object sender, EventArgs e)
         {
             CloseForm();
+            openChildForm(new Screens.Form_InProgress());
         }
 
         private void iconButton_Completed_Click(object sender, EventArgs e)
         {
             CloseForm();
+            openChildForm(new Screens.Form_Completed());
         }
 
         private void iconButton_Cer_Click(object sender, EventArgs e)
         {
             CloseForm();
+            openChildForm(new Screens.Form_Certificate());
         }
 
         private void iconButton_Prof_Click(object sender, EventArgs e)
         {
             CloseForm();
+            openChildForm(new Screens.Form_Profile());
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
     }
 }

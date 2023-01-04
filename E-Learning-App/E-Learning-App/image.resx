@@ -133,4 +133,67 @@
   <data name="co05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\co05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="co06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co06.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co07.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co08.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co09.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co13.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co14.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co15.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co17.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co19.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co20.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co25.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\co26.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

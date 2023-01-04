@@ -88,7 +88,7 @@ namespace E_Learning_App.CustomControls
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 282);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(422, 53);
+            this.gradientPanel1.Size = new System.Drawing.Size(417, 53);
             this.gradientPanel1.TabIndex = 3;
             this.gradientPanel1.TopColor = System.Drawing.Color.DarkGray;
             this.gradientPanel1.Click += new System.EventHandler(this.pictureBox_course_Click);
@@ -119,7 +119,7 @@ namespace E_Learning_App.CustomControls
             this.Controls.Add(this.pictureBox_course);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "UC_Course";
-            this.Size = new System.Drawing.Size(422, 335);
+            this.Size = new System.Drawing.Size(417, 335);
             this.MouseEnter += new System.EventHandler(this.UC_Course_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.UC_Course_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_course)).EndInit();

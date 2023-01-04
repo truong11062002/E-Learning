@@ -31,11 +31,11 @@ namespace E_Learning_App.CustomControls
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_VideoInCourse));
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_uncompleted = new System.Windows.Forms.PictureBox();
             this.label_name_video = new System.Windows.Forms.Label();
             this.label_thoiluong = new System.Windows.Forms.Label();
             this.pictureBox_completed = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_uncompleted)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_completed)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,20 +48,22 @@ namespace E_Learning_App.CustomControls
             this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Video:";
+            this.label1.Click += new System.EventHandler(this.UC_VideoInCourse_Click);
             this.label1.MouseEnter += new System.EventHandler(this.UC_VideoInCourse_MouseEnter);
             this.label1.MouseLeave += new System.EventHandler(this.UC_VideoInCourse_MouseLeave);
             // 
-            // pictureBox1
+            // pictureBox_uncompleted
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 38);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseEnter += new System.EventHandler(this.UC_VideoInCourse_MouseEnter);
-            this.pictureBox1.MouseLeave += new System.EventHandler(this.UC_VideoInCourse_MouseLeave);
+            this.pictureBox_uncompleted.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_uncompleted.BackgroundImage")));
+            this.pictureBox_uncompleted.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_uncompleted.Location = new System.Drawing.Point(16, 6);
+            this.pictureBox_uncompleted.Name = "pictureBox_uncompleted";
+            this.pictureBox_uncompleted.Size = new System.Drawing.Size(41, 38);
+            this.pictureBox_uncompleted.TabIndex = 0;
+            this.pictureBox_uncompleted.TabStop = false;
+            this.pictureBox_uncompleted.Click += new System.EventHandler(this.UC_VideoInCourse_Click);
+            this.pictureBox_uncompleted.MouseEnter += new System.EventHandler(this.UC_VideoInCourse_MouseEnter);
+            this.pictureBox_uncompleted.MouseLeave += new System.EventHandler(this.UC_VideoInCourse_MouseLeave);
             // 
             // label_name_video
             // 
@@ -73,6 +75,7 @@ namespace E_Learning_App.CustomControls
             this.label_name_video.Size = new System.Drawing.Size(50, 20);
             this.label_name_video.TabIndex = 2;
             this.label_name_video.Text = "name";
+            this.label_name_video.Click += new System.EventHandler(this.UC_VideoInCourse_Click);
             this.label_name_video.MouseEnter += new System.EventHandler(this.UC_VideoInCourse_MouseEnter);
             this.label_name_video.MouseLeave += new System.EventHandler(this.UC_VideoInCourse_MouseLeave);
             // 
@@ -85,6 +88,7 @@ namespace E_Learning_App.CustomControls
             this.label_thoiluong.Size = new System.Drawing.Size(76, 20);
             this.label_thoiluong.TabIndex = 3;
             this.label_thoiluong.Text = "thoiluong";
+            this.label_thoiluong.Click += new System.EventHandler(this.UC_VideoInCourse_Click);
             this.label_thoiluong.MouseEnter += new System.EventHandler(this.UC_VideoInCourse_MouseEnter);
             this.label_thoiluong.MouseLeave += new System.EventHandler(this.UC_VideoInCourse_MouseLeave);
             // 
@@ -92,7 +96,7 @@ namespace E_Learning_App.CustomControls
             // 
             this.pictureBox_completed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_completed.BackgroundImage")));
             this.pictureBox_completed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_completed.Location = new System.Drawing.Point(16, 6);
+            this.pictureBox_completed.Location = new System.Drawing.Point(16, 7);
             this.pictureBox_completed.Name = "pictureBox_completed";
             this.pictureBox_completed.Size = new System.Drawing.Size(41, 38);
             this.pictureBox_completed.TabIndex = 4;
@@ -109,14 +113,14 @@ namespace E_Learning_App.CustomControls
             this.Controls.Add(this.label_thoiluong);
             this.Controls.Add(this.label_name_video);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox_uncompleted);
             this.Name = "UC_VideoInCourse";
             this.Size = new System.Drawing.Size(348, 91);
             this.Load += new System.EventHandler(this.UC_VideoInCourse_Load);
             this.Click += new System.EventHandler(this.UC_VideoInCourse_Click);
             this.MouseEnter += new System.EventHandler(this.UC_VideoInCourse_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.UC_VideoInCourse_MouseLeave);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_uncompleted)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_completed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,7 +129,7 @@ namespace E_Learning_App.CustomControls
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox_uncompleted;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_name_video;
         private System.Windows.Forms.Label label_thoiluong;

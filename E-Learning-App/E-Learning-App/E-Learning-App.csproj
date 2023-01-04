@@ -65,11 +65,23 @@
     <Compile Include="CustomControls\GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomControls\UC_Completed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UC_Completed.Designer.cs">
+      <DependentUpon>UC_Completed.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\UC_Course.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CustomControls\UC_Course.Designer.cs">
       <DependentUpon>UC_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\UC_InProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UC_InProgress.Designer.cs">
+      <DependentUpon>UC_InProgress.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\UC_Title.cs">
       <SubType>UserControl</SubType>
@@ -91,6 +103,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\Form_Certificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form_Certificate.Designer.cs">
+      <DependentUpon>Form_Certificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Form_Completed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form_Completed.Designer.cs">
+      <DependentUpon>Form_Completed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Form_Detail_Course.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,11 +127,23 @@
     <Compile Include="Screens\Form_Home.Designer.cs">
       <DependentUpon>Form_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Form_InProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form_InProgress.Designer.cs">
+      <DependentUpon>Form_InProgress.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Form_Learn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\Form_Learn.Designer.cs">
       <DependentUpon>Form_Learn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Form_Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form_Loading.Designer.cs">
+      <DependentUpon>Form_Loading.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\Form_Login.cs">
       <SubType>Form</SubType>
@@ -115,10 +151,28 @@
     <Compile Include="Screens\Form_Login.Designer.cs">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Form_Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form_Notification.Designer.cs">
+      <DependentUpon>Form_Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Form_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form_Profile.Designer.cs">
+      <DependentUpon>Form_Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Variables\globalVariablescs.cs" />
     <Compile Include="Variables\ListFormPanel.cs" />
+    <EmbeddedResource Include="CustomControls\UC_Completed.resx">
+      <DependentUpon>UC_Completed.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UC_Course.resx">
       <DependentUpon>UC_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UC_InProgress.resx">
+      <DependentUpon>UC_InProgress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UC_Title.resx">
       <DependentUpon>UC_Title.cs</DependentUpon>
@@ -139,17 +193,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Screens\Form_Certificate.resx">
+      <DependentUpon>Form_Certificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Form_Completed.resx">
+      <DependentUpon>Form_Completed.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Form_Detail_Course.resx">
       <DependentUpon>Form_Detail_Course.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Form_Home.resx">
       <DependentUpon>Form_Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Form_InProgress.resx">
+      <DependentUpon>Form_InProgress.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Form_Learn.resx">
       <DependentUpon>Form_Learn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Form_Notification.resx">
+      <DependentUpon>Form_Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Form_Profile.resx">
+      <DependentUpon>Form_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -198,6 +267,69 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co20.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co26.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

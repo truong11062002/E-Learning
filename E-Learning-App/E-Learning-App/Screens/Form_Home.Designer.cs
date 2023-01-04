@@ -41,7 +41,8 @@ namespace E_Learning_App.Screens
             this.iconButton_InProgress = new FontAwesome.Sharp.IconButton();
             this.iconButton_home = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.iconButton_name_leaner = new FontAwesome.Sharp.IconButton();
             this.circularButton_avt = new E_Learning_App.CustomControls.CircularButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconButton_search = new FontAwesome.Sharp.IconButton();
@@ -246,7 +247,8 @@ namespace E_Learning_App.Screens
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.iconButton_name_leaner);
             this.panel1.Controls.Add(this.circularButton_avt);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -254,24 +256,34 @@ namespace E_Learning_App.Screens
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1700, 121);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
             // 
-            // iconButton1
+            // panel2
             // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(1449, 45);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(239, 49);
-            this.iconButton1.TabIndex = 15;
-            this.iconButton1.Text = "Truong Nguyen Nhat";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.ForeColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(1451, 39);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(2, 60);
+            this.panel2.TabIndex = 16;
+            // 
+            // iconButton_name_leaner
+            // 
+            this.iconButton_name_leaner.FlatAppearance.BorderSize = 0;
+            this.iconButton_name_leaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton_name_leaner.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton_name_leaner.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.iconButton_name_leaner.IconColor = System.Drawing.Color.Black;
+            this.iconButton_name_leaner.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton_name_leaner.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton_name_leaner.Location = new System.Drawing.Point(1455, 43);
+            this.iconButton_name_leaner.Name = "iconButton_name_leaner";
+            this.iconButton_name_leaner.Size = new System.Drawing.Size(239, 49);
+            this.iconButton_name_leaner.TabIndex = 15;
+            this.iconButton_name_leaner.Text = "Truong Nguyen Nhat";
+            this.iconButton_name_leaner.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton_name_leaner.UseVisualStyleBackColor = true;
             // 
             // circularButton_avt
             // 
@@ -280,9 +292,9 @@ namespace E_Learning_App.Screens
             this.circularButton_avt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.circularButton_avt.FlatAppearance.BorderSize = 0;
             this.circularButton_avt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton_avt.Location = new System.Drawing.Point(1393, 45);
+            this.circularButton_avt.Location = new System.Drawing.Point(1379, 39);
             this.circularButton_avt.Name = "circularButton_avt";
-            this.circularButton_avt.Size = new System.Drawing.Size(50, 50);
+            this.circularButton_avt.Size = new System.Drawing.Size(60, 56);
             this.circularButton_avt.TabIndex = 14;
             this.circularButton_avt.UseVisualStyleBackColor = false;
             // 
@@ -345,6 +357,7 @@ namespace E_Learning_App.Screens
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_Home_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -371,7 +384,8 @@ namespace E_Learning_App.Screens
         private FontAwesome.Sharp.IconButton iconButton_Completed;
         private FontAwesome.Sharp.IconButton iconButton_InProgress;
         private FontAwesome.Sharp.IconButton iconButton_home;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton_name_leaner;
         private CustomControls.CircularButton circularButton_avt;
+        private System.Windows.Forms.Panel panel2;
     }
 }

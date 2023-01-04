@@ -23,6 +23,17 @@ namespace E_Learning_App.CustomControls
             Name = dr["course_detail_id"].ToString();
             label_name_video.Text = dr["course_detail_name"].ToString();
             label_thoiluong.Text = dr["course_detail_time"].ToString();
+            if(dr["course_detail_completed"].ToString() == "1")
+            {
+                pictureBox_completed.Visible = true;
+                pictureBox_uncompleted.Visible = false;
+            }
+            else
+            {
+                pictureBox_completed.Visible = false;
+                pictureBox_uncompleted.Visible = true;
+            }
+            
         }
 
         private void UC_VideoInCourse_MouseEnter(object sender, EventArgs e)
