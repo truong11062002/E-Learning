@@ -43,6 +43,8 @@ namespace E_Learning_App.Screens
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label_name_video = new System.Windows.Forms.Label();
+            this.circularButton_like = new E_Learning_App.CustomControls.CircularButton();
+            this.circularButton_unlike = new E_Learning_App.CustomControls.CircularButton();
             this.panel_detail_course.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel_video.SuspendLayout();
@@ -114,6 +116,8 @@ namespace E_Learning_App.Screens
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.circularButton_unlike);
+            this.panel3.Controls.Add(this.circularButton_like);
             this.panel3.Controls.Add(this.iconButton6);
             this.panel3.Controls.Add(this.iconButton5);
             this.panel3.Controls.Add(this.iconButton2);
@@ -218,6 +222,35 @@ namespace E_Learning_App.Screens
             this.label_name_video.Text = "name video";
             this.label_name_video.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // circularButton_like
+            // 
+            this.circularButton_like.BackColor = System.Drawing.Color.White;
+            this.circularButton_like.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton_like.BackgroundImage")));
+            this.circularButton_like.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.circularButton_like.FlatAppearance.BorderSize = 0;
+            this.circularButton_like.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton_like.Location = new System.Drawing.Point(1207, 125);
+            this.circularButton_like.Name = "circularButton_like";
+            this.circularButton_like.Size = new System.Drawing.Size(64, 55);
+            this.circularButton_like.TabIndex = 9;
+            this.circularButton_like.UseVisualStyleBackColor = false;
+            this.circularButton_like.Click += new System.EventHandler(this.circularButton_like_Click);
+            // 
+            // circularButton_unlike
+            // 
+            this.circularButton_unlike.BackColor = System.Drawing.Color.White;
+            this.circularButton_unlike.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton_unlike.BackgroundImage")));
+            this.circularButton_unlike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.circularButton_unlike.FlatAppearance.BorderSize = 0;
+            this.circularButton_unlike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton_unlike.Location = new System.Drawing.Point(1207, 125);
+            this.circularButton_unlike.Name = "circularButton_unlike";
+            this.circularButton_unlike.Size = new System.Drawing.Size(64, 55);
+            this.circularButton_unlike.TabIndex = 10;
+            this.circularButton_unlike.UseVisualStyleBackColor = false;
+            this.circularButton_unlike.Visible = false;
+            this.circularButton_unlike.Click += new System.EventHandler(this.circularButton_unlike_Click);
+            // 
             // Form_Learn
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -252,5 +285,7 @@ namespace E_Learning_App.Screens
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_videoInCourse;
         private FontAwesome.Sharp.IconButton iconButton6;
+        private CustomControls.CircularButton circularButton_like;
+        private CustomControls.CircularButton circularButton_unlike;
     }
 }

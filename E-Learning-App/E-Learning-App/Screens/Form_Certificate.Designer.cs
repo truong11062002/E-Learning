@@ -31,6 +31,9 @@ namespace E_Learning_App.Screens
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Certificate));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label_skill = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,17 +46,14 @@ namespace E_Learning_App.Screens
             this.label_name_course = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label_skill = new System.Windows.Forms.Label();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,6 +67,38 @@ namespace E_Learning_App.Screens
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(710, 864);
             this.panel1.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel6.Controls.Add(this.label_skill);
+            this.panel6.Controls.Add(this.label6);
+            this.panel6.Location = new System.Drawing.Point(41, 452);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(634, 381);
+            this.panel6.TabIndex = 2;
+            // 
+            // label_skill
+            // 
+            this.label_skill.AutoSize = true;
+            this.label_skill.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_skill.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label_skill.Location = new System.Drawing.Point(50, 91);
+            this.label_skill.Name = "label_skill";
+            this.label_skill.Size = new System.Drawing.Size(114, 29);
+            this.label_skill.TabIndex = 1;
+            this.label_skill.Text = "your_skill";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(14, 15);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(294, 29);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "SKILLS YOU WILL GAIN";
             // 
             // panel3
             // 
@@ -198,6 +230,23 @@ namespace E_Learning_App.Screens
             this.panel5.Size = new System.Drawing.Size(972, 161);
             this.panel5.TabIndex = 1;
             // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.Blue;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.White;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ShareFromSquare;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(340, 67);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(292, 63);
+            this.iconButton2.TabIndex = 1;
+            this.iconButton2.Text = "Share Certificate";
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
             // iconButton1
             // 
             this.iconButton1.BackColor = System.Drawing.Color.White;
@@ -223,59 +272,9 @@ namespace E_Learning_App.Screens
             this.panel4.Size = new System.Drawing.Size(969, 560);
             this.panel4.TabIndex = 0;
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Controls.Add(this.label_skill);
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(41, 452);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(634, 381);
-            this.panel6.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(14, 15);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(294, 29);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "SKILLS YOU WILL GAIN";
-            // 
-            // label_skill
-            // 
-            this.label_skill.AutoSize = true;
-            this.label_skill.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_skill.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label_skill.Location = new System.Drawing.Point(50, 91);
-            this.label_skill.Name = "label_skill";
-            this.label_skill.Size = new System.Drawing.Size(114, 29);
-            this.label_skill.TabIndex = 1;
-            this.label_skill.Text = "your_skill";
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.Blue;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ShareFromSquare;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(340, 67);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(292, 63);
-            this.iconButton2.TabIndex = 1;
-            this.iconButton2.Text = "Share Certificate";
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            // 
             // Form_Certificate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1682, 864);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -283,12 +282,12 @@ namespace E_Learning_App.Screens
             this.Text = "Form_Certificate";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }

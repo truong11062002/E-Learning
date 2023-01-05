@@ -43,6 +43,50 @@ namespace E_Learning_App.Screens
             id_course = dr["course_id"].ToString();
             id_course_detail = dr["course_id"].ToString() + "_01";
             LoadStars(id_course);
+
+            //Panel pa = new Panel();
+            
+            //panel_body.Controls.Add(pa);
+
+            //pa.Dock = DockStyle.Bottom;
+            //pa.Size = new Size(panel_body.Width, 1000);
+            //pa.BackColor = Color.WhiteSmoke;
+            //Panel pan = new Panel();
+            //pa.Controls.Add(pan);
+
+            //pan.Size = new Size(panel_body.Width, 300);
+            //pan.BackColor = Color.Transparent;
+            //pan.Dock = DockStyle.Top;
+
+            //Label lb = new Label();
+            //lb.Text = "Reviews";
+            //lb.ForeColor = Color.DarkGray;
+            //lb.Font = new Font("Arial", 14, FontStyle.Bold);
+            //lb.Left = 55;
+            //lb.Top = 30;
+            //lb.AutoSize = true;
+            //pan.Controls.Add(lb);
+
+            //TextBox tb = new TextBox();
+            //tb.Size = new Size(550, 120);
+            //tb.Left = 200;
+            //tb.Top = 150;
+            //tb.Font = new Font("Arial", 30, FontStyle.Regular);
+            //pan.Controls.Add(tb);
+
+            //IconButton icBtn = new IconButton();
+            //icBtn.Text = "Đánh giá";
+            //icBtn.Left = 200;
+            //icBtn.Top = 100;
+            //icBtn.BackColor = Color.Green;
+            //icBtn.Size = new Size(130,60);
+
+            //FlowLayoutPanel flp = new FlowLayoutPanel();
+            //pa.Controls.Add(flp);
+
+            //flp.BackColor = Color.Gray;
+            //flp.Dock = DockStyle.Fill;
+
         }
         private void openChildForm(Form childForm)
         {
@@ -114,6 +158,22 @@ namespace E_Learning_App.Screens
                 else
                     item.IconColor = Color.Black;
             }
+        }
+
+        private void Form_Detail_Course_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconButton_review_Click(object sender, EventArgs e)
+        {
+            Form FormReview = new Screens.Form_Reviews();
+            FormReview.Show();
         }
     }
 }

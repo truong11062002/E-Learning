@@ -94,6 +94,7 @@ namespace E_Learning_App.Screens
             Form LoginForm = new Form_Login();
             Hide();
             LoginForm.Show();
+            CloseForm();
         }
 
         private void panel1_MouseEnter(object sender, EventArgs e)
@@ -306,6 +307,18 @@ namespace E_Learning_App.Screens
         {
             Form ChangeInfo = new Screens.Form_Change_Info();
             ChangeInfo.Show();
+        }
+
+        private void Form_Home_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Display a MsgBox asking the user to save changes or abort.
+            if (MessageBox.Show("Do you want to exit app?", "My Application",
+               MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                // Cancel the Closing event from closing the form.
+                e.Cancel = true;
+                // Call method to save file...
+            }
         }
     }
 }

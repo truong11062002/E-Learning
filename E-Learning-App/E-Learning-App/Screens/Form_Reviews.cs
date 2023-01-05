@@ -10,21 +10,26 @@ using System.Windows.Forms;
 
 namespace E_Learning_App.Screens
 {
-    public partial class Form_Loading : Form
+    public partial class Form_Reviews : Form
     {
-        public Form_Loading()
+        public Form_Reviews()
         {
             InitializeComponent();
-            
-            WaitLoadingForm();
         }
 
-        public async void WaitLoadingForm()
+        private void label1_Click(object sender, EventArgs e)
         {
-            await Task.Delay(3000);
-            Form LoginForm = new Screens.Form_Login();
-            this.Hide();
-            LoginForm.Show();
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

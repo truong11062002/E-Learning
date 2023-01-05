@@ -65,6 +65,12 @@
     <Compile Include="CustomControls\GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomControls\UC_Achievements.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UC_Achievements.Designer.cs">
+      <DependentUpon>UC_Achievements.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\UC_Completed.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="CustomControls\UC_InProgress.Designer.cs">
       <DependentUpon>UC_InProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\UC_Reviews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UC_Reviews.Designer.cs">
+      <DependentUpon>UC_Reviews.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\UC_Title.cs">
       <SubType>UserControl</SubType>
@@ -169,8 +181,17 @@
     <Compile Include="Screens\Form_Profile.Designer.cs">
       <DependentUpon>Form_Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Form_Reviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form_Reviews.Designer.cs">
+      <DependentUpon>Form_Reviews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Variables\globalVariablescs.cs" />
     <Compile Include="Variables\ListFormPanel.cs" />
+    <EmbeddedResource Include="CustomControls\UC_Achievements.resx">
+      <DependentUpon>UC_Achievements.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UC_Completed.resx">
       <DependentUpon>UC_Completed.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UC_InProgress.resx">
       <DependentUpon>UC_InProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UC_Reviews.resx">
+      <DependentUpon>UC_Reviews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UC_Title.resx">
       <DependentUpon>UC_Title.cs</DependentUpon>
@@ -220,6 +244,9 @@
     <EmbeddedResource Include="Screens\Form_Learn.resx">
       <DependentUpon>Form_Learn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Form_Loading.resx">
+      <DependentUpon>Form_Loading.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Form_Profile.resx">
       <DependentUpon>Form_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Form_Reviews.resx">
+      <DependentUpon>Form_Reviews.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

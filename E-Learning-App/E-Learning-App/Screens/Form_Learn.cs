@@ -19,7 +19,7 @@ namespace E_Learning_App.Screens
         DataProvider provider = new DataProvider();
         public string id_course_global;
         public string id_course_detail_global;
-
+        private int _like;
         public Form_Learn()
         {
             //InitializeComponent();
@@ -115,6 +115,32 @@ namespace E_Learning_App.Screens
                 Load_VideoInCourse(dt);
                 Load_AllVideo(id_course_global, id_course_detail_global);
             }
+        }
+
+        private void circularButton_like_Click(object sender, EventArgs e)
+        {
+            _like++;
+            this.circularButton_unlike.Visible = true;
+            this.circularButton_like.Visible = false;
+
+            string query = $"update DETAIL_COURSE set course_detail_like = {_like} " +
+                $"where DETAIL_COURSE.course_detail_id = '{id_course_detail_global}' " +
+                $"and DETAIL_COURSE.course_id = '{id_course_global}'";
+
+            provider.ExecuteNonQuery(query);
+        }
+
+        private void circularButton_unlike_Click(object sender, EventArgs e)
+        {
+            _like--;
+            this.circularButton_unlike.Visible = false;
+            this.circularButton_like.Visible = true;
+
+            string query = $"update DETAIL_COURSE set course_detail_like = {_like} " +
+                $"where DETAIL_COURSE.course_detail_id = '{id_course_detail_global}' " +
+                $"and DETAIL_COURSE.course_id = '{id_course_global}'";
+
+            provider.ExecuteNonQuery(query);
         }
     }
 }
