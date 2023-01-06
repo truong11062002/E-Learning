@@ -1,5 +1,4 @@
-﻿using E_Learning_App.DAO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,18 +10,11 @@ using System.Windows.Forms;
 
 namespace E_Learning_App.Screens
 {
-    public partial class Form_Certificate : Form
+    public partial class Form_Acknowledgement : Form
     {
-        DataProvider provider = new DataProvider();
-        DataTable dt = new DataTable();
-        public Form_Certificate()
+        public Form_Acknowledgement()
         {
             InitializeComponent();
-        }
-
-        private void Load_Info()
-        {
-            string query = $"";
         }
     }
 }

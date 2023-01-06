@@ -15,6 +15,16 @@ namespace E_Learning_App.Screens
         public Form_Loading()
         {
             InitializeComponent();
+            
+            WaitLoadingForm();
+        }
+
+        public async void WaitLoadingForm()
+        {
+            await Task.Delay(3000);
+            Form LoginForm = new Screens.Form_Login();
+            this.Hide();
+            LoginForm.Show();
         }
     }
 }

@@ -49,13 +49,17 @@ namespace E_Learning_App.CustomControls
             // label_name_course
             // 
             this.label_name_course.AutoSize = true;
-            this.label_name_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_name_course.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_name_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_name_course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(194)))));
             this.label_name_course.Location = new System.Drawing.Point(224, 66);
             this.label_name_course.Name = "label_name_course";
-            this.label_name_course.Size = new System.Drawing.Size(201, 32);
+            this.label_name_course.Size = new System.Drawing.Size(194, 31);
             this.label_name_course.TabIndex = 13;
             this.label_name_course.Text = "Name_course";
+            this.label_name_course.Click += new System.EventHandler(this.label_name_course_Click);
+            this.label_name_course.MouseEnter += new System.EventHandler(this.label_name_course_MouseEnter);
+            this.label_name_course.MouseLeave += new System.EventHandler(this.label_name_course_MouseLeave);
             // 
             // label_taught_by
             // 
@@ -101,6 +105,7 @@ namespace E_Learning_App.CustomControls
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Location = new System.Drawing.Point(1623, 23);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 36);
@@ -140,6 +145,7 @@ namespace E_Learning_App.CustomControls
             // iconButton1
             // 
             this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(84)))), ((int)(((byte)(212)))));
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton1.ForeColor = System.Drawing.Color.White;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
@@ -151,10 +157,13 @@ namespace E_Learning_App.CustomControls
             this.iconButton1.TabIndex = 16;
             this.iconButton1.Text = "View Certificate";
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.MouseEnter += new System.EventHandler(this.iconButton1_MouseEnter);
+            this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(84)))), ((int)(((byte)(212)))));
             this.label3.Location = new System.Drawing.Point(1399, 118);

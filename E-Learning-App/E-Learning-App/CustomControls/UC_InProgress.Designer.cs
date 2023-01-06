@@ -48,9 +48,13 @@ namespace E_Learning_App.CustomControls
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_course = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_course)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -212,6 +216,7 @@ namespace E_Learning_App.CustomControls
             this.pictureBox2.Size = new System.Drawing.Size(36, 36);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox_course
             // 
@@ -221,10 +226,58 @@ namespace E_Learning_App.CustomControls
             this.pictureBox_course.TabIndex = 0;
             this.pictureBox_course.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.iconButton2);
+            this.panel4.Controls.Add(this.iconButton1);
+            this.panel4.Location = new System.Drawing.Point(1547, 73);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(89, 110);
+            this.panel4.TabIndex = 15;
+            this.panel4.Visible = false;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(0, 0);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(87, 52);
+            this.iconButton1.TabIndex = 0;
+            this.iconButton1.Text = "Rate";
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.MouseEnter += new System.EventHandler(this.iconButton1_MouseEnter);
+            this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(0, 52);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(87, 56);
+            this.iconButton2.TabIndex = 1;
+            this.iconButton2.Text = "Share";
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.MouseEnter += new System.EventHandler(this.iconButton2_MouseEnter);
+            this.iconButton2.MouseLeave += new System.EventHandler(this.iconButton2_MouseLeave);
+            // 
             // UC_InProgress
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_prog);
             this.Controls.Add(this.progressBar1);
@@ -247,6 +300,7 @@ namespace E_Learning_App.CustomControls
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_course)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,5 +325,8 @@ namespace E_Learning_App.CustomControls
         private System.Windows.Forms.Label label_prog;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel4;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

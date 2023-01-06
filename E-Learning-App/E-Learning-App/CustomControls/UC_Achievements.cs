@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace E_Learning_App.Screens
+namespace E_Learning_App.CustomControls
 {
-    public partial class Form_Profile : Form
+    public partial class UC_Achievements : UserControl
     {
-        public Form_Profile()
+        public UC_Achievements()
         {
             InitializeComponent();
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

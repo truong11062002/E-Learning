@@ -15,6 +15,7 @@ namespace E_Learning_App.Screens
     {
         DataTable dt;
         private Form activeForm = null;
+        
         public Form_Home()
         {
             InitializeComponent();
@@ -23,6 +24,8 @@ namespace E_Learning_App.Screens
             ShowAllCourses("select * from COURSE");
             iconButton_name_leaner.Text = getNameLearner("select * from LEARNER");
         }
+
+        
         private void Form_Home_Load(object sender, EventArgs e)
         {
             
@@ -94,6 +97,7 @@ namespace E_Learning_App.Screens
             Form LoginForm = new Form_Login();
             Hide();
             LoginForm.Show();
+            CloseForm();
         }
 
         private void panel1_MouseEnter(object sender, EventArgs e)
@@ -219,9 +223,7 @@ namespace E_Learning_App.Screens
 
         private void iconButton_home_Click(object sender, EventArgs e)
         {
-            CloseForm();
-            Loading();
-            ShowAllCourses("select * from COURSE");
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -302,6 +304,29 @@ namespace E_Learning_App.Screens
 
         }
 
-        
+        private void iconButton_name_leaner_Click(object sender, EventArgs e)
+        {
+            Form ChangeInfo = new Screens.Form_Change_Info();
+            ChangeInfo.Show();
+        }
+
+        private void Form_Home_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Display a MsgBox asking the user to save changes or abort.
+            if (MessageBox.Show("Do you want to exit app?", "My Application",
+               MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                // Cancel the Closing event from closing the form.
+                e.Cancel = true;
+                // Call method to save file...
+            }
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            CloseForm();
+            Loading();
+            ShowAllCourses("select * from COURSE");
+        }
     }
 }

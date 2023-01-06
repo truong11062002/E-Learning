@@ -30,3 +30,9 @@ C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.For
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Completed.resources
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Profile.resources
 C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomControls.UC_Completed.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Change_Info.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Loading.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomControls.UC_Achievements.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Reviews.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.CustomControls.UC_Reviews.resources
+C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\E_Learning_App.Screens.Form_Acknowledgement.resources
