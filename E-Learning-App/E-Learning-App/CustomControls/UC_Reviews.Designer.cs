@@ -31,7 +31,7 @@ namespace E_Learning_App.CustomControls
         {
             this.label_name = new System.Windows.Forms.Label();
             this.label_datetime = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_review = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label_name
@@ -50,33 +50,33 @@ namespace E_Learning_App.CustomControls
             this.label_datetime.AutoSize = true;
             this.label_datetime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_datetime.ForeColor = System.Drawing.Color.DimGray;
-            this.label_datetime.Location = new System.Drawing.Point(1033, 135);
+            this.label_datetime.Location = new System.Drawing.Point(1033, 129);
             this.label_datetime.Name = "label_datetime";
             this.label_datetime.Size = new System.Drawing.Size(109, 29);
             this.label_datetime.TabIndex = 1;
             this.label_datetime.Text = "Datetime";
             // 
-            // label1
+            // label_review
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(36, 58);
-            this.label1.MaximumSize = new System.Drawing.Size(975, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Name";
+            this.label_review.AutoSize = true;
+            this.label_review.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_review.ForeColor = System.Drawing.Color.Black;
+            this.label_review.Location = new System.Drawing.Point(36, 58);
+            this.label_review.MaximumSize = new System.Drawing.Size(975, 0);
+            this.label_review.Name = "label_review";
+            this.label_review.Size = new System.Drawing.Size(64, 25);
+            this.label_review.TabIndex = 2;
+            this.label_review.Text = "Name";
             // 
             // UC_Reviews
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.Controls.Add(this.label_review);
             this.Controls.Add(this.label_datetime);
             this.Controls.Add(this.label_name);
             this.Name = "UC_Reviews";
-            this.Size = new System.Drawing.Size(1332, 180);
+            this.Size = new System.Drawing.Size(1325, 165);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,6 +86,6 @@ namespace E_Learning_App.CustomControls
 
         private System.Windows.Forms.Label label_name;
         private System.Windows.Forms.Label label_datetime;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_review;
     }
 }

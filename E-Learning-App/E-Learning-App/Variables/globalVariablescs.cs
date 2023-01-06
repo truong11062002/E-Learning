@@ -11,6 +11,9 @@ namespace E_Learning_App.Variables
     {
         // DataTable Account
         private static DataTable dtAccount = new DataTable();
+        private static string nameUser = "";
         public static DataTable DataTableAccount { get { return dtAccount; } set { dtAccount = value; } }
+
+        public static string NameUser { get => nameUser; set => nameUser = value; }
     }
 }

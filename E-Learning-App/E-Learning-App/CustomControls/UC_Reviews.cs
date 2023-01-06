@@ -16,5 +16,12 @@ namespace E_Learning_App.CustomControls
         {
             InitializeComponent();
         }
+
+        public UC_Reviews(DataRow dr) : this()
+        {
+            label_name.Text = dr["LEARNER_NAME"].ToString();
+            label_datetime.Text = dr["COMMENT_TIME"].ToString();
+            label_review.Text = dr["COMMENT_TEXT"].ToString();
+        }
     }
 }

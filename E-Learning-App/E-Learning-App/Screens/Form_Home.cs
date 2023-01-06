@@ -15,6 +15,7 @@ namespace E_Learning_App.Screens
     {
         DataTable dt;
         private Form activeForm = null;
+        
         public Form_Home()
         {
             InitializeComponent();
@@ -23,6 +24,8 @@ namespace E_Learning_App.Screens
             ShowAllCourses("select * from COURSE");
             iconButton_name_leaner.Text = getNameLearner("select * from LEARNER");
         }
+
+        
         private void Form_Home_Load(object sender, EventArgs e)
         {
             
@@ -220,9 +223,7 @@ namespace E_Learning_App.Screens
 
         private void iconButton_home_Click(object sender, EventArgs e)
         {
-            CloseForm();
-            Loading();
-            ShowAllCourses("select * from COURSE");
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -319,6 +320,13 @@ namespace E_Learning_App.Screens
                 e.Cancel = true;
                 // Call method to save file...
             }
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            CloseForm();
+            Loading();
+            ShowAllCourses("select * from COURSE");
         }
     }
 }

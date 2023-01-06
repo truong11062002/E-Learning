@@ -16,8 +16,11 @@ namespace E_Learning_App.Screens
     {
         private Form activeForm = null;
         DataTable dt_global;
-        string id_course = "";
+        private static string id_course = "";
         string id_course_detail = "";
+
+        public static string Id_course { get => id_course; set => id_course = value; }
+
         public Form_Detail_Course()
         {
             
@@ -40,9 +43,9 @@ namespace E_Learning_App.Screens
             label_about.Text = dr["course_about"].ToString();
             label_luotxem.Text = dr["course_freq"].ToString();
 
-            id_course = dr["course_id"].ToString();
+            Id_course = dr["course_id"].ToString();
             id_course_detail = dr["course_id"].ToString() + "_01";
-            LoadStars(id_course);
+            LoadStars(Id_course);
 
             //Panel pa = new Panel();
             
@@ -105,7 +108,7 @@ namespace E_Learning_App.Screens
 
         private void iconButton_enroll_Click(object sender, EventArgs e)
         {
-            openChildForm(new Screens.Form_Learn(id_course, id_course_detail));
+            openChildForm(new Screens.Form_Learn(Id_course, id_course_detail));
         }
 
         private void LoadStars(string id)
@@ -132,7 +135,7 @@ namespace E_Learning_App.Screens
         private void b1_MouseLeave(object sender, EventArgs e)
         {
             IconButton btn = (IconButton)sender;
-            LoadStars(id_course);
+            LoadStars(Id_course);
         }
 
         private void b1_Click(object sender, EventArgs e)
@@ -140,10 +143,10 @@ namespace E_Learning_App.Screens
             
             IconButton btn = (IconButton)sender;
             DataProvider provider = new DataProvider();
-            string query = $"update COURSE set course_stars = {btn.Name.Substring(1)} where course_id = '{id_course}'";
+            string query = $"update COURSE set course_stars = {btn.Name.Substring(1)} where course_id = '{Id_course}'";
             provider.ExecuteNonQuery(query);
             MessageBox.Show("Đánh giá thành công!");
-            LoadStars(id_course);
+            LoadStars(Id_course);
         }
 
         private void b1_MouseEnter(object sender, EventArgs e)
@@ -172,6 +175,7 @@ namespace E_Learning_App.Screens
 
         private void iconButton_review_Click(object sender, EventArgs e)
         {
+            
             Form FormReview = new Screens.Form_Reviews();
             FormReview.Show();
         }
