@@ -36,7 +36,7 @@ namespace E_Learning_App.Screens
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label_name = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label_date = new System.Windows.Forms.Label();
@@ -49,11 +49,13 @@ namespace E_Learning_App.Screens
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,6 +86,7 @@ namespace E_Learning_App.Screens
             this.label_skill.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_skill.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label_skill.Location = new System.Drawing.Point(50, 91);
+            this.label_skill.MaximumSize = new System.Drawing.Size(540, 0);
             this.label_skill.Name = "label_skill";
             this.label_skill.Size = new System.Drawing.Size(114, 29);
             this.label_skill.TabIndex = 1;
@@ -104,7 +107,7 @@ namespace E_Learning_App.Screens
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(236)))), ((int)(((byte)(244)))));
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label_name);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label_date);
@@ -126,15 +129,15 @@ namespace E_Learning_App.Screens
             this.label5.TabIndex = 7;
             this.label5.Text = "\'s account is verified\r\n";
             // 
-            // label4
+            // label_name
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(198, 189);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 25);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "name_leaner";
+            this.label_name.AutoSize = true;
+            this.label_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_name.Location = new System.Drawing.Point(198, 189);
+            this.label_name.Name = "label_name";
+            this.label_name.Size = new System.Drawing.Size(126, 25);
+            this.label_name.TabIndex = 6;
+            this.label_name.Text = "name_leaner";
             // 
             // label2
             // 
@@ -162,9 +165,9 @@ namespace E_Learning_App.Screens
             this.label_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_date.Location = new System.Drawing.Point(198, 97);
             this.label_date.Name = "label_date";
-            this.label_date.Size = new System.Drawing.Size(207, 25);
+            this.label_date.Size = new System.Drawing.Size(168, 25);
             this.label_date.TabIndex = 3;
-            this.label_date.Text = "September 11, 2022";
+            this.label_date.Text = "January 7, 2023";
             // 
             // label_name_learner
             // 
@@ -267,10 +270,21 @@ namespace E_Learning_App.Screens
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Controls.Add(this.reportViewer1);
             this.panel4.Location = new System.Drawing.Point(0, 137);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(969, 560);
             this.panel4.TabIndex = 0;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(969, 560);
+            this.reportViewer1.TabIndex = 0;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // Form_Certificate
             // 
@@ -280,6 +294,7 @@ namespace E_Learning_App.Screens
             this.Controls.Add(this.panel1);
             this.Name = "Form_Certificate";
             this.Text = "Form_Certificate";
+            this.Load += new System.EventHandler(this.Form_Certificate_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -288,6 +303,7 @@ namespace E_Learning_App.Screens
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -297,7 +313,7 @@ namespace E_Learning_App.Screens
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label_date;
@@ -313,5 +329,6 @@ namespace E_Learning_App.Screens
         private System.Windows.Forms.Label label_skill;
         private System.Windows.Forms.Label label6;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

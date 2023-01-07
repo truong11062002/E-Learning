@@ -36,6 +36,8 @@ namespace E_Learning_App.CustomControls
 
             label_name_course.Text = dr["course_name"].ToString();
             label_taught_by.Text = dr["course_taught_by"].ToString();
+
+            
         }
         private void openChildForm(Form childForm)
         {
@@ -79,6 +81,11 @@ namespace E_Learning_App.CustomControls
             DataProvider provider = new DataProvider();
             DataTable dtShowMovieDetail = provider.ExecuteQuery(query);
             openChildForm(new Screens.Form_Detail_Course(myImage, dtShowMovieDetail));
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

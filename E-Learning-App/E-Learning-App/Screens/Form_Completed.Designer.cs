@@ -34,6 +34,7 @@ namespace E_Learning_App.Screens
             // 
             // flowLayoutPanel_completed
             // 
+            this.flowLayoutPanel_completed.AutoScroll = true;
             this.flowLayoutPanel_completed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel_completed.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel_completed.Name = "flowLayoutPanel_completed";

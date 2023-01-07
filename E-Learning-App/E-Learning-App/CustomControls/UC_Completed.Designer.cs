@@ -157,6 +157,7 @@ namespace E_Learning_App.CustomControls
             this.iconButton1.TabIndex = 16;
             this.iconButton1.Text = "View Certificate";
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             this.iconButton1.MouseEnter += new System.EventHandler(this.iconButton1_MouseEnter);
             this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
             // 

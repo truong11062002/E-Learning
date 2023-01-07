@@ -114,6 +114,8 @@ namespace E_Learning_App.Screens
                 DataTable dt = provider.ExecuteQuery(query);
                 Load_VideoInCourse(dt);
                 Load_AllVideo(id_course_global, id_course_detail_global);
+
+
             }
         }
 

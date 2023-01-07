@@ -32,6 +32,8 @@ namespace E_Learning_App.Screens
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Profile));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel_achieve = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.gradientPanel1 = new E_Learning_App.CustomControls.GradientPanel();
             this.label_college = new System.Windows.Forms.Label();
@@ -40,8 +42,6 @@ namespace E_Learning_App.Screens
             this.label_phone = new System.Windows.Forms.Label();
             this.label_name = new System.Windows.Forms.Label();
             this.pictureBox_learner = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel_achieve = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
@@ -69,6 +69,23 @@ namespace E_Learning_App.Screens
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(814, 401);
             this.panel4.TabIndex = 15;
+            // 
+            // flowLayoutPanel_achieve
+            // 
+            this.flowLayoutPanel_achieve.AutoScroll = true;
+            this.flowLayoutPanel_achieve.Location = new System.Drawing.Point(3, 94);
+            this.flowLayoutPanel_achieve.Name = "flowLayoutPanel_achieve";
+            this.flowLayoutPanel_achieve.Size = new System.Drawing.Size(808, 304);
+            this.flowLayoutPanel_achieve.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.ForeColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(2, 75);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(810, 2);
+            this.panel3.TabIndex = 6;
             // 
             // label3
             // 
@@ -164,22 +181,6 @@ namespace E_Learning_App.Screens
             this.pictureBox_learner.Size = new System.Drawing.Size(184, 184);
             this.pictureBox_learner.TabIndex = 0;
             this.pictureBox_learner.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.ForeColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(2, 75);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(810, 2);
-            this.panel3.TabIndex = 6;
-            // 
-            // flowLayoutPanel_achieve
-            // 
-            this.flowLayoutPanel_achieve.Location = new System.Drawing.Point(3, 94);
-            this.flowLayoutPanel_achieve.Name = "flowLayoutPanel_achieve";
-            this.flowLayoutPanel_achieve.Size = new System.Drawing.Size(808, 304);
-            this.flowLayoutPanel_achieve.TabIndex = 7;
             // 
             // Form_Profile
             // 
