@@ -115,7 +115,16 @@ namespace E_Learning_App.Screens
                 Load_VideoInCourse(dt);
                 Load_AllVideo(id_course_global, id_course_detail_global);
 
+                // ----------- INSERT CERTIFICATE -----------------
 
+                query = $"SELECT * FROM COURSE INNER JOIN DETAIL_COURSE ON COURSE.course_id = DETAIL_COURSE.course_id WHERE course_detail_completed = 0 and COURSE.course_id = '{id_course_global}'";
+                DataTable dt_cer = provider.ExecuteQuery(query);
+
+                if(dt_cer.Rows.Count == 0)
+                {
+                    query = $"insert into CERTIFICATE values('le01', '{id_course_global}')";
+                    provider.ExecuteNonQuery(query);
+                }
             }
         }
 

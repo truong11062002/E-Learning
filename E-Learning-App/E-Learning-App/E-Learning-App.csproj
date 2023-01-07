@@ -220,7 +220,6 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Variables\globalVariablescs.cs" />
     <Compile Include="Variables\ListFormPanel.cs" />
-    <EmbeddedResource Include="Certificate.rdlc" />
     <EmbeddedResource Include="CustomControls\UC_Achievements.resx">
       <DependentUpon>UC_Achievements.cs</DependentUpon>
     </EmbeddedResource>

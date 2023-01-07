@@ -133,5 +133,14 @@ namespace E_Learning_App.CustomControls
             iconButton2.BackColor = Color.White;
             iconButton2.ForeColor = Color.Black;
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)image.ResourceManager.GetObject(pictureBox_course.Name);
+            string query = $"select * from COURSE where course_id like '{pictureBox_course.Name}'";
+            DataProvider provider = new DataProvider();
+            DataTable dtShowMovieDetail = provider.ExecuteQuery(query);
+            openChildForm(new Screens.Form_Detail_Course(myImage, dtShowMovieDetail));
+        }
     }
 }

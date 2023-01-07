@@ -15,6 +15,7 @@ namespace E_Learning_App.CustomControls
     {
         DataProvider provider = new DataProvider();
         private Form activeForm = null;
+        bool isClicked = false;
         public UC_Completed()
         {
             InitializeComponent();
@@ -85,7 +86,64 @@ namespace E_Learning_App.CustomControls
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            openChildForm(new Screens.Form_Certificate(pictureBox_course.Name));
+        }
 
+        private void label3_MouseEnter(object sender, EventArgs e)
+        {
+            label_rate.ForeColor = Color.DarkBlue;
+        }
+
+        private void label_rate_MouseLeave(object sender, EventArgs e)
+        {
+            label_rate.ForeColor = Color.FromArgb(8, 84, 212);
+        }
+
+        private void label_rate_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)image.ResourceManager.GetObject(pictureBox_course.Name);
+            string query = $"select * from COURSE where course_id like '{pictureBox_course.Name}'";
+            DataProvider provider = new DataProvider();
+            DataTable dtShowMovieDetail = provider.ExecuteQuery(query);
+            openChildForm(new Screens.Form_Detail_Course(myImage, dtShowMovieDetail));
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            isClicked = !isClicked;
+            if (isClicked)
+            {
+                this.panel4.Visible = true;
+
+            }
+            else
+            {
+                this.panel4.Visible = false;
+            }
+        }
+
+        private void iconButton3_MouseEnter(object sender, EventArgs e)
+        {
+            iconButton3.BackColor = Color.Blue;
+            iconButton3.ForeColor = Color.White;
+        }
+
+        private void iconButton3_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton3.BackColor = Color.White;
+            iconButton3.ForeColor = Color.Black;
+        }
+
+        private void iconButton2_MouseEnter(object sender, EventArgs e)
+        {
+            iconButton2.BackColor = Color.Blue;
+            iconButton2.ForeColor = Color.White;
+        }
+
+        private void iconButton2_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton2.BackColor = Color.White;
+            iconButton2.ForeColor = Color.Black;
         }
     }
 }

@@ -95,5 +95,3 @@ C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\pt\Microsoft.ReportViewer.
 C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\E-Learning\E-Learning-App\E-Learning-App\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\RdlCompile.cache
-C:\E-Learning\E-Learning-App\E-Learning-App\obj\Debug\RdlCompile.compiled

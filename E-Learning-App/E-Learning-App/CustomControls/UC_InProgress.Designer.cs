@@ -49,8 +49,8 @@ namespace E_Learning_App.CustomControls
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_course = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_course)).BeginInit();
@@ -237,24 +237,6 @@ namespace E_Learning_App.CustomControls
             this.panel4.TabIndex = 15;
             this.panel4.Visible = false;
             // 
-            // iconButton1
-            // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(0, 0);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(87, 52);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Rate";
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.MouseEnter += new System.EventHandler(this.iconButton1_MouseEnter);
-            this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
-            // 
             // iconButton2
             // 
             this.iconButton2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -272,6 +254,25 @@ namespace E_Learning_App.CustomControls
             this.iconButton2.UseVisualStyleBackColor = true;
             this.iconButton2.MouseEnter += new System.EventHandler(this.iconButton2_MouseEnter);
             this.iconButton2.MouseLeave += new System.EventHandler(this.iconButton2_MouseLeave);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(0, 0);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(87, 52);
+            this.iconButton1.TabIndex = 0;
+            this.iconButton1.Text = "Rate";
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.iconButton1.MouseEnter += new System.EventHandler(this.iconButton1_MouseEnter);
+            this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
             // 
             // UC_InProgress
             // 
