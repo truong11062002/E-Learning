@@ -29,6 +29,7 @@ namespace E_Learning_App.Screens
             DataProvider provider = new DataProvider();
             DataTable dtShowMyList = provider.ExecuteQuery(query);
 
+            
 
             ResourceManager rm;
             if (dtShowMyList.Rows.Count > 0)
@@ -50,6 +51,8 @@ namespace E_Learning_App.Screens
                             row["course_id"].ToString()
                         );
                         flowLayoutPanel_completed.Controls.Add(item);
+
+                        
                     }
 
                 }

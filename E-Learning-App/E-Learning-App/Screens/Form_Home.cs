@@ -15,7 +15,7 @@ namespace E_Learning_App.Screens
     {
         DataTable dt;
         private Form activeForm = null;
-        
+
         public Form_Home()
         {
             InitializeComponent();
@@ -26,9 +26,10 @@ namespace E_Learning_App.Screens
         }
 
         
+
         private void Form_Home_Load(object sender, EventArgs e)
         {
-            
+
         }
         private string getNameLearner(string query)
         {
@@ -223,7 +224,9 @@ namespace E_Learning_App.Screens
 
         private void iconButton_home_Click(object sender, EventArgs e)
         {
-            
+            CloseForm();
+            Loading();
+            ShowAllCourses("select * from COURSE");
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -290,7 +293,7 @@ namespace E_Learning_App.Screens
         private void iconButton_Cer_Click(object sender, EventArgs e)
         {
             CloseForm();
-            openChildForm(new Screens.Form_Certificate());
+            openChildForm(new Screens.Form_Acknowledgement());
         }
 
         private void iconButton_Prof_Click(object sender, EventArgs e)

@@ -33,15 +33,18 @@ namespace E_Learning_App.Screens
             this.circularButton1 = new E_Learning_App.CustomControls.CircularButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TextBox_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox_phone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.TextBox_name = new System.Windows.Forms.TextBox();
-            this.textBox_phone = new System.Windows.Forms.TextBox();
             this.textBox_address = new System.Windows.Forms.TextBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox_Image = new System.Windows.Forms.ComboBox();
+            this.circularButton_showAvt = new E_Learning_App.CustomControls.CircularButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -81,6 +84,17 @@ namespace E_Learning_App.Screens
             this.panel1.Size = new System.Drawing.Size(491, 51);
             this.panel1.TabIndex = 2;
             // 
+            // TextBox_name
+            // 
+            this.TextBox_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_name.ForeColor = System.Drawing.Color.Gray;
+            this.TextBox_name.Location = new System.Drawing.Point(40, 12);
+            this.TextBox_name.Name = "TextBox_name";
+            this.TextBox_name.Size = new System.Drawing.Size(411, 27);
+            this.TextBox_name.TabIndex = 2;
+            this.TextBox_name.Text = "Full name";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -112,6 +126,17 @@ namespace E_Learning_App.Screens
             this.panel2.Size = new System.Drawing.Size(491, 51);
             this.panel2.TabIndex = 3;
             // 
+            // textBox_phone
+            // 
+            this.textBox_phone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_phone.ForeColor = System.Drawing.Color.Gray;
+            this.textBox_phone.Location = new System.Drawing.Point(40, 12);
+            this.textBox_phone.Name = "textBox_phone";
+            this.textBox_phone.Size = new System.Drawing.Size(411, 27);
+            this.textBox_phone.TabIndex = 2;
+            this.textBox_phone.Text = "Phone number";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -132,44 +157,6 @@ namespace E_Learning_App.Screens
             this.panel3.Size = new System.Drawing.Size(491, 51);
             this.panel3.TabIndex = 4;
             // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.Blue;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(33, 497);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(197, 76);
-            this.iconButton1.TabIndex = 6;
-            this.iconButton1.Text = "Save changes";
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // TextBox_name
-            // 
-            this.TextBox_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_name.ForeColor = System.Drawing.Color.Gray;
-            this.TextBox_name.Location = new System.Drawing.Point(40, 12);
-            this.TextBox_name.Name = "TextBox_name";
-            this.TextBox_name.Size = new System.Drawing.Size(411, 27);
-            this.TextBox_name.TabIndex = 2;
-            this.TextBox_name.Text = "Full name";
-            // 
-            // textBox_phone
-            // 
-            this.textBox_phone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_phone.ForeColor = System.Drawing.Color.Gray;
-            this.textBox_phone.Location = new System.Drawing.Point(40, 12);
-            this.textBox_phone.Name = "textBox_phone";
-            this.textBox_phone.Size = new System.Drawing.Size(411, 27);
-            this.textBox_phone.TabIndex = 2;
-            this.textBox_phone.Text = "Phone number";
-            // 
             // textBox_address
             // 
             this.textBox_address.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -181,11 +168,69 @@ namespace E_Learning_App.Screens
             this.textBox_address.TabIndex = 2;
             this.textBox_address.Text = "Address";
             // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.Blue;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(33, 515);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(197, 76);
+            this.iconButton1.TabIndex = 6;
+            this.iconButton1.Text = "Save changes";
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(27, 328);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 32);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Avatar";
+            // 
+            // comboBox_Image
+            // 
+            this.comboBox_Image.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.comboBox_Image.FormattingEnabled = true;
+            this.comboBox_Image.Items.AddRange(new object[] {
+            "Image 01",
+            "Image 02",
+            "Image 03",
+            "Image 04",
+            "Image 05"});
+            this.comboBox_Image.Location = new System.Drawing.Point(284, 328);
+            this.comboBox_Image.Name = "comboBox_Image";
+            this.comboBox_Image.Size = new System.Drawing.Size(491, 39);
+            this.comboBox_Image.TabIndex = 17;
+            this.comboBox_Image.Text = "Image 01";
+            this.comboBox_Image.SelectedIndexChanged += new System.EventHandler(this.comboBox_Image_SelectedIndexChanged);
+            // 
+            // circularButton_showAvt
+            // 
+            this.circularButton_showAvt.BackColor = System.Drawing.Color.White;
+            this.circularButton_showAvt.FlatAppearance.BorderSize = 0;
+            this.circularButton_showAvt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton_showAvt.Location = new System.Drawing.Point(427, 383);
+            this.circularButton_showAvt.Name = "circularButton_showAvt";
+            this.circularButton_showAvt.Size = new System.Drawing.Size(169, 126);
+            this.circularButton_showAvt.TabIndex = 18;
+            this.circularButton_showAvt.UseVisualStyleBackColor = false;
+            // 
             // Form_Change_Info
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1000, 603);
+            this.Controls.Add(this.circularButton_showAvt);
+            this.Controls.Add(this.comboBox_Image);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label4);
@@ -224,5 +269,8 @@ namespace E_Learning_App.Screens
         private System.Windows.Forms.TextBox TextBox_name;
         private System.Windows.Forms.TextBox textBox_phone;
         private System.Windows.Forms.TextBox textBox_address;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox_Image;
+        private CustomControls.CircularButton circularButton_showAvt;
     }
 }
