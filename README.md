@@ -38,66 +38,69 @@
 **Authentication**
 Login           |  Forgot passcode | Password Recovery
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://i.imgur.com/mbgJB8Z.png" width="210" height="410"> | <img src="https://i.imgur.com/p8RqFtK.png" width="210" height="410">| <img src="https://i.imgur.com/sLE32jk.png" width="210" height="410">
+<img src="https://i.imgur.com/T0PUGHL.png" width="210" height="410"> | <img src="https://i.imgur.com/BUsrivY.png" width="210" height="410">| <img src="https://i.imgur.com/sLE32jk.png" width="210" height="410">
 
-
+![]()
 
 
 **Home Screen**
 
-![](https://i.imgur.com/ocgyISy.png)
-
-
+![](https://i.imgur.com/F30kPcO.png)
 
 
 **Search Screen**
 
-![](https://i.imgur.com/Cdx64X5.png)
+![](https://i.imgur.com/Pg4KeJC.png)
+
 
 
 **Detail Course**
 
-![](https://i.imgur.com/aGEyvDG.png)
-
-
+![](https://i.imgur.com/Dl6XI9J.png)
 
 **Review Course**
-![](https://i.imgur.com/sbR5PXz.png)
+![](https://i.imgur.com/dKfcMpT.png)
+
 
 
 **Learn Screen**
-![](https://i.imgur.com/GASPAT1.png)
+![](https://i.imgur.com/ILFZCde.png)
+
 
 **Note**
-![](https://i.imgur.com/m1jWmNm.png)
+![](https://i.imgur.com/3ldWcXy.png)
+
 
 **Download Video**
-![](https://i.imgur.com/L3PlNjq.png)
-
+![](https://i.imgur.com/TCuco1Y.png)
 
 **In Progress**
-![](https://i.imgur.com/ORLDkb8.png)
+![](https://i.imgur.com/pmFsJYB.png)
 
 **Discuss Screen**
-![](https://i.imgur.com/lXDesCk.png)
-
+![](https://i.imgur.com/ohzlTg5.png)
 
 **Exercise**
-![](https://i.imgur.com/AGBe71G.png)
+![](https://i.imgur.com/44jJEw2.png)
+
 
 **Completed**
-![](https://i.imgur.com/epvHvzK.png)
+![](https://i.imgur.com/hjaRf9Q.png)
+
 
 **Certificate**
+![](https://i.imgur.com/Ru3nX57.png)
 
-![](https://i.imgur.com/ySuoLj6.png)
-![](https://i.imgur.com/gyOJDzQ.png)
+![](https://i.imgur.com/rUN7Qrx.png)
+
 
 **Profile**
-![](https://i.imgur.com/2qxfbKJ.png)
+![](https://i.imgur.com/dOzKPwb.png)
+
 
 **Change Profile**
-![](https://i.imgur.com/1R8Ff7y.png)
+![](https://i.imgur.com/lJ5QcJ4.png)
+
 
 
 
@@ -106,12 +109,3 @@ Login           |  Forgot passcode | Password Recovery
 | STT    | Student ID          | Full Name       | Github                                               | Email                   |
 | ---- |:-------------:| ----------------------:|-----------------------------------------------------:|-------------------------:
 | 1      | 20522087      | Nguyễn Nhật Trường     |https://github.com/truong11062002                     |20522087@gm.uit.edu.vn   |
-
-
-
-
-
-
-
-
-
